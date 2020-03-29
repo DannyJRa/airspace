@@ -1,0 +1,3 @@
+"0","git add -A
+git commit -m ""netlify.toml""
+git push"

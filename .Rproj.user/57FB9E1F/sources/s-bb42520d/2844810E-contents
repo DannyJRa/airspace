@@ -15,7 +15,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{bash}
 git add -A
-git commit -m "hello world"
+git commit -m "netlify.toml"
 git push
 ```
 
