@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = ""
+baseURL = "/"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
 # post pagination
