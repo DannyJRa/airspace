@@ -3,7 +3,7 @@
     "path": "~/OneDrive/DataScience/42_Website_dannyrasch/02_Blog-Airspace/netlify.toml",
     "project_path": "netlify.toml",
     "type": "toml",
-    "hash": "4453112",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1585491047814.0,
@@ -11,15 +11,15 @@
     "relative_order": 14,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "1,22",
+        "cursorPosition": "1,24",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1585491111,
+    "lastKnownWriteTime": 1585491211,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1585491111503,
+    "last_content_update": 1585491211668,
     "read_only": false,
     "read_only_alternatives": []
 }
