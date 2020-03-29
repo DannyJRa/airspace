@@ -3,7 +3,7 @@
     "path": "~/OneDrive/DataScience/42_Website_dannyrasch/02_Blog-Airspace/data/en/about.yml",
     "project_path": "data/en/about.yml",
     "type": "yaml",
-    "hash": "351409187",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1585488251843.0,
@@ -11,7 +11,7 @@
     "relative_order": 16,
     "properties": {
         "cursorPosition": "160,19",
-        "scrollLine": "143"
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1585488685,

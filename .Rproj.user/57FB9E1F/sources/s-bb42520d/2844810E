@@ -3,16 +3,16 @@
     "path": "~/OneDrive/DataScience/42_Website_dannyrasch/02_Blog-Airspace/admin.Rmd",
     "project_path": "admin.Rmd",
     "type": "r_markdown",
-    "hash": "786194309",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1585490606480.0,
     "source_on_save": false,
     "relative_order": 13,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "17,39",
-        "scrollLine": "2",
+        "cursorPosition": "17,23",
+        "scrollLine": "13",
         "last_setup_crc32": "bb42520dbb338d19"
     },
     "folds": "",
@@ -20,7 +20,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1585491230524,
+    "last_content_update": 1585492423931,
     "read_only": false,
     "read_only_alternatives": []
 }
