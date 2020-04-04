@@ -30,6 +30,7 @@ link = "plugins/smartslider3/css/normalize.min.css"
 link = "plugins/smartslider3/css/smartslider.min.css"
 
 # JS Plugins
+
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
@@ -44,6 +45,8 @@ link = "plugins/shuffle/shuffle.min.js"
 link = "plugins/google-map/gmap.js"
 
 [[params.plugins.js]]
+link = "plugins/smartslider3/js/GsapMorphSVGPlugin.min.js"
+[[params.plugins.js]]
 link = "plugins/smartslider3/js/n2-j.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/nextend-frontend.min.js"
@@ -55,6 +58,10 @@ link = "plugins/smartslider3/js/nextend-webfontloader.min.js"
 link = "plugins/smartslider3/js/smartslider-block-type-frontend.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/smartslider-frontend.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"
+
+
 
 
 

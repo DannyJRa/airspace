@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Flask with Connexion</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.68.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="../../plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/magnific-popup/magnific-popup.css">
+  
+  <link rel="stylesheet" href="../../plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/normalize.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/smartslider.min.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="../../scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../../images/favicon.png" type="image/x-icon">
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="screen, print" />
+    <link rel="stylesheet" type="text/css" href="css/smartslider.min.css" media="screen, print" />
+    <style type="text/css">.n2-ss-spinner-simple-white-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0,0,0,0);
+      width:100%;
+      height: 100%;
+    }
+    
+    .n2-ss-spinner-simple-white:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -11px;
+        margin-left: -11px;
+    }
+    
+    .n2-ss-spinner-simple-white:not(:required):before {
+        content: '';
+        border-radius: 50%;
+        border-top: 2px solid #333;
+        border-right: 2px solid transparent;
+        animation: n2SimpleWhite .6s linear infinite;
+    }
+    @keyframes n2SimpleWhite {
+        to {transform: rotate(360deg);}
+    }
+    .n2-ss-spinner-simple-white-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0,0,0,0);
+      width:100%;
+      height: 100%;
+    }
+    
+    .n2-ss-spinner-simple-white:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -11px;
+        margin-left: -11px;
+    }
+    
+    .n2-ss-spinner-simple-white:not(:required):before {
+        content: '';
+        border-radius: 50%;
+        border-top: 2px solid #333;
+        border-right: 2px solid transparent;
+        animation: n2SimpleWhite .6s linear infinite;
+    }
+    @keyframes n2SimpleWhite {
+        to {transform: rotate(360deg);}
+    }
+    .n2-ss-spinner-simple-white-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0,0,0,0);
+      width:100%;
+      height: 100%;
+    }
+    
+    .n2-ss-spinner-simple-white:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -11px;
+        margin-left: -11px;
+    }
+    
+    .n2-ss-spinner-simple-white:not(:required):before {
+        content: '';
+        border-radius: 50%;
+        border-top: 2px solid #333;
+        border-right: 2px solid transparent;
+        animation: n2SimpleWhite .6s linear infinite;
+    }
+    @keyframes n2SimpleWhite {
+        to {transform: rotate(360deg);}
+    }
+    .n2-ss-spinner-simple-white-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0,0,0,0);
+      width:100%;
+      height: 100%;
+    }
+    
+    .n2-ss-spinner-simple-white:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -11px;
+        margin-left: -11px;
+    }
+    
+    .n2-ss-spinner-simple-white:not(:required):before {
+        content: '';
+        border-radius: 50%;
+        border-top: 2px solid #333;
+        border-right: 2px solid transparent;
+        animation: n2SimpleWhite .6s linear infinite;
+    }
+    @keyframes n2SimpleWhite {
+        to {transform: rotate(360deg);}
+    }
+    .n2-ss-spinner-simple-white-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1000;
+    }
+    
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0,0,0,0);
+      width:100%;
+      height: 100%;
+    }
+    
+    .n2-ss-spinner-simple-white:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -11px;
+        margin-left: -11px;
+    }
+    
+    .n2-ss-spinner-simple-white:not(:required):before {
+        content: '';
+        border-radius: 50%;
+        border-top: 2px solid #333;
+        border-right: 2px solid transparent;
+        animation: n2SimpleWhite .6s linear infinite;
+    }
+    @keyframes n2SimpleWhite {
+        to {transform: rotate(360deg);}
+    }</style>
+    <script type="text/javascript">window.N2GSAP=1;window.N2PLATFORM="joomla";(function(){var N=this;N.N2_=N.N2_||{r:[],d:[]},N.N2R=N.N2R||function(){N.N2_.r.push(arguments)},N.N2D=N.N2D||function(){N.N2_.d.push(arguments)}}).call(window);if(!window.n2jQuery){window.n2jQuery={ready:function(cb){console.error('n2jQuery will be deprecated!');N2R(['$'],cb);}}}window.nextend={localization: {}, ready: function(cb){console.error('nextend.ready will be deprecated!');N2R('documentReady', function($){cb.call(window,$)})}};window.N2SSPRO=1;
+            nextend.fontsLoaded = false;
+            nextend.fontsLoadedActive = function () {nextend.fontsLoaded = true;};
+            var requiredFonts = ["Roboto:n3","Roboto:n4"],
+                fontData = {
+                    google: {
+                        families: ["Roboto:300,400:latin"]
+                    },
+                    active: function(){nextend.fontsLoadedActive()},
+                    inactive: function(){nextend.fontsLoadedActive()},
+                    fontactive: function(f,s){fontData.resolveFont(f+':'+s);},
+                    fontinactive: function(f,s){fontData.resolveFont(f+':'+s);},
+                    resolveFont: function(n){
+                        for(var i = requiredFonts.length - 1; i >= 0; i--) {
+                            if(requiredFonts[i] === n) {
+                               requiredFonts.splice(i, 1);
+                               break;
+                            }
+                        }
+                        if(!requiredFonts.length) nextend.fontsLoadedActive();
+                    }
+                };
+            if(typeof WebFontConfig !== 'undefined' && typeof WebFont === 'undefined'){
+                var _WebFontConfig = WebFontConfig;
+                for(var k in WebFontConfig){
+                    if(k == 'active'){
+                      fontData.active = function(){nextend.fontsLoadedActive();_WebFontConfig.active();}
+                    }else if(k == 'inactive'){
+                      fontData.inactive = function(){nextend.fontsLoadedActive();_WebFontConfig.inactive();}
+                    }else if(k == 'fontactive'){
+                      fontData.fontactive = function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontactive.apply(this,arguments);}
+                    }else if(k == 'fontinactive'){
+                      fontData.fontinactive = function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontinactive.apply(this,arguments);}
+                    }else if(k == 'google'){
+                        if(typeof WebFontConfig.google.families !== 'undefined'){
+                            for(var i = 0; i < WebFontConfig.google.families.length; i++){
+                                fontData.google.families.push(WebFontConfig.google.families[i]);
+                            }
+                        }
+                    }else{
+                        fontData[k] = WebFontConfig[k];
+                    }
+                }
+            }
+            fontData.classes=true;
+            fontData.events=true;
+            
+            if(typeof WebFont === 'undefined'){
+                window.WebFontConfig = fontData;
+            }else{
+                WebFont.load(fontData);
+            }</script>
+    <script type="text/javascript" src="js/n2-j.min.js"></script>
+    <script type="text/javascript" src="js/nextend-gsap.min.js"></script>
+    <script type="text/javascript" src="js/smartslider-frontend.min.js"></script>
+    <script type="text/javascript" src="js/smartslider-block-type-frontend.min.js"></script>
+    <script type="text/javascript" src="js/GsapMorphSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="js/smartslider-simple-type-frontend.min.js"></script>
+    <script type="text/javascript" src="js/nextend-webfontloader.min.js"></script>
+    <script type="text/javascript">N2R('documentReady', function($){
+    
+            nextend.fontsDeferred = $.Deferred();
+            if(nextend.fontsLoaded){
+                nextend.fontsDeferred.resolve();
+            }else{
+                nextend.fontsLoadedActive = function () {
+                    nextend.fontsLoaded = true;
+                    nextend.fontsDeferred.resolve();
+                };
+                var intercalCounter = 0;
+                nextend.fontInterval = setInterval(function(){
+                    if(intercalCounter > 3 || document.documentElement.className.indexOf('wf-active') !== -1){
+                        nextend.fontsLoadedActive();
+                        clearInterval(nextend.fontInterval);
+                    }
+                    intercalCounter++;
+                }, 1000);
+            }
+    window.n2ScrollSpeed=400;
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-10', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":700,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":408,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":186,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":function($){this.stages.done("ResponsiveStart",function(){var e=this.sliderElement.find(".n2-ss-shape-divider");e.length&&e.each(function(e,t){var a=$(t),o={outer:a,inner:a.find(".n2-ss-shape-divider-inner")};this.sliderElement.on("SliderDeviceOrientation",function(e,t){for(var i=t.device.toLowerCase(),n=0;n<o.outer.length;n++){var s=o.outer.eq(n),a=o.inner.eq(n),r=s.data(i+"height"),d=a.data(i+"width");r<=0?s.css("display","none"):s.css("display",""),""===r&&(r=s.data("desktopportraitheight")),s.css("height",r+"px"),""===d&&(d=a.data("desktopportraitwidth")),a.css({width:d+"%",marginLeft:(d-100)/-2+"%"})}}),a.hasClass("n2-ss-divider-animate")&&this.visible(function(){var e=a.find(".n2-ss-divider-start > *"),t=a.find(".n2-ss-divider-end > *"),i=100/(a.data("speed")||100),n={};e.parent().attr("yoyo")&&(n={onComplete:function(){this.reverse()},onReverseComplete:function(){this.restart()}});for(var s=0;s<e.length;s++)NextendTween.to(e[s],parseFloat(e.eq(s).attr("duration"))*i,$.extend({morphSVG:t[s],delay:0,ease:"easeOutCubic"},n,{delay:e.eq(s).attr("delay"),ease:e.eq(s).attr("ease")}))});var i=a.data("scroll");if("shrink"===i||"grow"===i){var r,n,s=a.data("side"),d=function(e,t){var i=function(){var e,t=0;t=window.matchMedia&&/Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent||navigator.vendor||window.opera)?(e=n2const.isIOS?document.documentElement.clientHeight:window.innerHeight,window.matchMedia("(orientation: landscape)").matches?Math.min(screen.width,e):Math.min(screen.height,e)):window.n2ClientHeight||document.documentElement.clientHeight||document.body.clientHeight;return t}(),n=this.sliderElement.offset().top+e,s=$(window).scrollTop();(n<=s+i&&s<=n||0<r&&r<100)&&(r=Math.max(0,Math.min(100,Math.abs(t-(n-s)/i*100))),o.inner.css("height",r+"%"))}.bind(this);"shrink"===i?(o.inner.css("height","100%"),r=100,n=function(){d("bottom"===s?this.sliderElement.height():0,0)}.bind(this)):"grow"===i&&(o.inner.css("height",0),r=0,n=function(){d("bottom"===s?this.sliderElement.height():0,100)}.bind(this)),$(window).on({scroll:n,resize:n}),this.visible(n)}}.bind(this))}.bind(this));}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-11', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":400,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":233,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":106,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":function($){}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-12', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":600,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":350,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":160,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"backgroundParallax":{"strength":0.5,"tablet":1,"mobile":1},"postBackgroundAnimations":0,"initCallbacks":function($){this.stages.done("ResponsiveStart",function(){var e=this.sliderElement.find(".n2-ss-shape-divider");e.length&&e.each(function(e,t){var a=$(t),o={outer:a,inner:a.find(".n2-ss-shape-divider-inner")};this.sliderElement.on("SliderDeviceOrientation",function(e,t){for(var i=t.device.toLowerCase(),n=0;n<o.outer.length;n++){var s=o.outer.eq(n),a=o.inner.eq(n),r=s.data(i+"height"),d=a.data(i+"width");r<=0?s.css("display","none"):s.css("display",""),""===r&&(r=s.data("desktopportraitheight")),s.css("height",r+"px"),""===d&&(d=a.data("desktopportraitwidth")),a.css({width:d+"%",marginLeft:(d-100)/-2+"%"})}}),a.hasClass("n2-ss-divider-animate")&&this.visible(function(){var e=a.find(".n2-ss-divider-start > *"),t=a.find(".n2-ss-divider-end > *"),i=100/(a.data("speed")||100),n={};e.parent().attr("yoyo")&&(n={onComplete:function(){this.reverse()},onReverseComplete:function(){this.restart()}});for(var s=0;s<e.length;s++)NextendTween.to(e[s],parseFloat(e.eq(s).attr("duration"))*i,$.extend({morphSVG:t[s],delay:0,ease:"easeOutCubic"},n,{delay:e.eq(s).attr("delay"),ease:e.eq(s).attr("ease")}))});var i=a.data("scroll");if("shrink"===i||"grow"===i){var r,n,s=a.data("side"),d=function(e,t){var i=function(){var e,t=0;t=window.matchMedia&&/Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent||navigator.vendor||window.opera)?(e=n2const.isIOS?document.documentElement.clientHeight:window.innerHeight,window.matchMedia("(orientation: landscape)").matches?Math.min(screen.width,e):Math.min(screen.height,e)):window.n2ClientHeight||document.documentElement.clientHeight||document.body.clientHeight;return t}(),n=this.sliderElement.offset().top+e,s=$(window).scrollTop();(n<=s+i&&s<=n||0<r&&r<100)&&(r=Math.max(0,Math.min(100,Math.abs(t-(n-s)/i*100))),o.inner.css("height",r+"%"))}.bind(this);"shrink"===i?(o.inner.css("height","100%"),r=100,n=function(){d("bottom"===s?this.sliderElement.height():0,0)}.bind(this)):"grow"===i&&(o.inner.css("height",0),r=0,n=function(){d("bottom"===s?this.sliderElement.height():0,100)}.bind(this)),$(window).on({scroll:n,resize:n}),this.visible(n)}}.bind(this))}.bind(this));}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-13', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":600,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":350,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":160,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":function($){new N2Classes.FrontendItemHeadingSplitText(this, "n2-ss-13item1", "0% 50% 0px", "visible",  {"name":"Static","data":{"mode":"words","sort":"normal","duration":0.5,"stagger":0.05,"ease":"easeInOutQuad","opacity":0,"scale":1,"x":"50","y":"0","rotationX":0,"rotationY":0,"rotationZ":0}},0.4, false, 0);}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-simple-type-frontend"],function(){new N2Classes.SmartSliderSimple('#n2-ss-14', {"admin":false,"callbacks":"","background.video.mobile":1,"randomize":{"randomize":0,"randomizeFirst":0},"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":600,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":350,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":160,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":1,"duration":8000,"autoplayLoop":1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":"0","mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"bgAnimationsColor":"RGBA(51,51,51,1)","bgAnimations":0,"mainanimation":{"type":"horizontal","duration":800,"delay":0,"ease":"easeOutQuad","parallax":0,"shiftedBackgroundAnimation":"auto"},"carousel":1,"dynamicHeight":0,"initCallbacks":function($){N2D("SmartSliderWidgetArrowImage","SmartSliderWidget",function(i,e){function r(i,e,t,s,r,o){this.key=i,this.action=t,this.desktopRatio=s,this.tabletRatio=r,this.mobileRatio=o,N2Classes.SmartSliderWidget.prototype.constructor.call(this,e)}return((r.prototype=Object.create(N2Classes.SmartSliderWidget.prototype)).constructor=r).prototype.onStart=function(){this.deferred=i.Deferred(),this.slider.sliderElement.on("SliderDevice",this.onDevice.bind(this)).trigger("addWidget",this.deferred),this.$widget=i("#"+this.slider.elementID+"-arrow-"+this.key).on("click",function(i){i.stopPropagation(),this.slider[this.action]()}.bind(this)),this.$resize=this.$widget.find(".n2-resize"),0===this.$resize.length&&(this.$resize=this.$widget),i.when(this.$widget.n2imagesLoaded()).always(this.onLoad.bind(this))},r.prototype.onLoad=function(){this.$widget.addClass("n2-ss-widget--calc"),this.previousWidth=this.$resize.width(),this.previousHeight=this.$resize.height(),this.$widget.removeClass("n2-ss-widget--calc"),this.$resize.find("img").css("width","100%"),this.onDevice(null,{device:this.slider.responsive.getDeviceMode()}),this.deferred.resolve()},r.prototype.onDevice=function(i,e){var t=1;switch(e.device){case"tabletPortrait":case"tabletLandscape":t=this.tabletRatio;break;case"mobilePortrait":case"mobileLandscape":t=this.mobileRatio;break;default:t=this.desktopRatio}this.$resize.width(this.previousWidth*t),this.$resize.height(this.previousHeight*t)},function(i,e,t,s){this.key="arrow",this.previous=new r("previous",i,"previousWithDirection",e,t,s),this.next=new r("next",i,"nextWithDirection",e,t,s)}});new N2Classes.SmartSliderWidgetArrowImage(this, 1, 0.7, 0.5);this.stages.done("ResponsiveStart",function(){var e=this.sliderElement.find(".n2-ss-shape-divider");e.length&&e.each(function(e,t){var a=$(t),o={outer:a,inner:a.find(".n2-ss-shape-divider-inner")};this.sliderElement.on("SliderDeviceOrientation",function(e,t){for(var i=t.device.toLowerCase(),n=0;n<o.outer.length;n++){var s=o.outer.eq(n),a=o.inner.eq(n),r=s.data(i+"height"),d=a.data(i+"width");r<=0?s.css("display","none"):s.css("display",""),""===r&&(r=s.data("desktopportraitheight")),s.css("height",r+"px"),""===d&&(d=a.data("desktopportraitwidth")),a.css({width:d+"%",marginLeft:(d-100)/-2+"%"})}}),a.hasClass("n2-ss-divider-animate")&&this.visible(function(){var e=a.find(".n2-ss-divider-start > *"),t=a.find(".n2-ss-divider-end > *"),i=100/(a.data("speed")||100),n={};e.parent().attr("yoyo")&&(n={onComplete:function(){this.reverse()},onReverseComplete:function(){this.restart()}});for(var s=0;s<e.length;s++)NextendTween.to(e[s],parseFloat(e.eq(s).attr("duration"))*i,$.extend({morphSVG:t[s],delay:0,ease:"easeOutCubic"},n,{delay:e.eq(s).attr("delay"),ease:e.eq(s).attr("ease")}))});var i=a.data("scroll");if("shrink"===i||"grow"===i){var r,n,s=a.data("side"),d=function(e,t){var i=function(){var e,t=0;t=window.matchMedia&&/Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent||navigator.vendor||window.opera)?(e=n2const.isIOS?document.documentElement.clientHeight:window.innerHeight,window.matchMedia("(orientation: landscape)").matches?Math.min(screen.width,e):Math.min(screen.height,e)):window.n2ClientHeight||document.documentElement.clientHeight||document.body.clientHeight;return t}(),n=this.sliderElement.offset().top+e,s=$(window).scrollTop();(n<=s+i&&s<=n||0<r&&r<100)&&(r=Math.max(0,Math.min(100,Math.abs(t-(n-s)/i*100))),o.inner.css("height",r+"%"))}.bind(this);"shrink"===i?(o.inner.css("height","100%"),r=100,n=function(){d("bottom"===s?this.sliderElement.height():0,0)}.bind(this)):"grow"===i&&(o.inner.css("height",0),r=0,n=function(){d("bottom"===s?this.sliderElement.height():0,100)}.bind(this)),$(window).on({scroll:n,resize:n}),this.visible(n)}}.bind(this))}.bind(this));}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-15', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":500,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":292,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":133,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":function($){}});});
+    N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],function(){new N2Classes.SmartSliderBlock('#n2-ss-16', {"admin":false,"callbacks":"","background.video.mobile":1,"alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scrollSpeed":400},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"hideOn":{"desktop":false,"tablet":false,"mobile":false},"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumSlideWidth":{"desktopLandscape":1200,"desktopPortrait":1200,"tabletLandscape":1200,"tabletPortrait":1200,"mobileLandscape":1200,"mobilePortrait":1200},"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1200,"height":300,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":175,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":80,"max":900,"min":320}},"normalizedDeviceModes":{"unknown":"desktopPortrait","desktopPortrait":"desktopPortrait","desktopLandscape":"desktopPortrait","tabletLandscape":"desktopPortrait","tabletPortrait":"tabletPortrait","mobileLandscape":"tabletPortrait","mobilePortrait":"mobilePortrait"},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":0,"keyboard":0,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":0,"duration":8000,"autoplayLoop":0,"allowReStart":0,"pause":{"click":1,"mouse":"enter","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1000,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":function($){}});});
+    });
+    </script>
+
+
+
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../">
+              <img src="../../images/logo2-200x50.png" alt="Airspace | Creative Agency Hugo Template" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../../">Home</a></li>
+
+              
+              
+              <li><a href="../../about">About</a></li>
+              
+              
+              
+              <li><a href="../../project">Project</a></li>
+              
+              
+              
+              <li><a href="../../service">Service</a></li>
+              
+              
+              
+              <li><a href="../../blog">Blog</a></li>
+              
+              
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a href="../../pricing">Pricing</a></li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+              <li><a href="../../contact">Contact</a></li>
+              
+              
+
+              
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('/');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Flask with Connexion</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">Flask with Connexion</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> June 22, 2019</li>
+              <li><i class="ion-android-people"></i> Posted By <a class="text-primary" href="../../author/dannyjra">DannyJRa</a></li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="../../tags/flask">Flask</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="../../images/blog/swagger_BLOG.png" alt="Flask with Connexion">
+					</div>
+					<div class="post-content post-excerpt">
+						<p>Connexion is a framework that automagically handles HTTP requests based on OpenAPI Specification (formerly known as Swagger Spec) of your API described in YAML format. Connexion allows you to write an OpenAPI specification, then maps the endpoints to your Python functions; this makes it unique, as many tools generate the specification based on your Python code. You can describe your REST API in as much detail as you want; then Connexion guarantees that it will work as you specified.</p>
+<h1 id="flask-with-connexion">FLask with Connexion</h1>
+<p>The goal of this article is to show you how to use Python 3, Flask, and Connexion to build useful REST APIs that can include input and output validation, and provide Swagger documentation.</p>
+<h2 id="benefits-of-connexion">Benefits of Connexion</h2>
+<p>That worked to demonstrate how the Connexion module helps you build a nice REST API along with interactive documentation.</p>
+<h3 id="swagger-ui">Swagger UI</h3>
+<p>The Swagger UI
+Now you have a simple web API running with a single URL endpoint. At this point, it would be reasonable to think, “configuring this with the swagger.yml file was cool and all, but what did it get me?”
+You’d be right to think that. We haven’t taken advantage of the input or output validation. All that swagger.yml gave us was a definition for the code path connected to the URL endpoint. However, what you also get for the extra work is the creation of the Swagger UI for your API.
+If you navigate to localhost:5000/api/ui, the system will bring up a page that looks something like this:</p>
+<p>This can be extremely useful when the API is complete as it gives you and your API users a way to explore and experiment with the API without having to write any code to do so.
+Building an API this way is very useful to me at work. Not only is the Swagger UI useful as a way to experiment with the API and read the provided documentation, but it’s also dynamic. Any time the configuration file changes, the Swagger UI changes as well.
+In addition, the configuration offers a nice, clean way to think about and create the API URL endpoints. I know from experience that APIs can develop in a sometimes random manner over time, making finding the code that supports the endpoints, and coordinating them, difficult at best.
+By separating the code from the API URL endpoint configuration, we decouple one from the other. This alone has been very useful to me in my work building API systems supporting single page web applications.</p>
+<h2 id="frontend-ajax">Frontend: Ajax</h2>
+<p>You’ll create a web application that displays the people on screen as well as allows the user to create new people, update existing people, and delete people. This will all be handled by AJAX calls from JavaScript to the people API URL endpoints.</p>
+<p>Source: <a href="https://realpython.com/flask-connexion-rest-api/#example-code">https://realpython.com/flask-connexion-rest-api/#example-code</a></p>
+<h1 id="peristent-data-store">Peristent data store</h1>
+<h2 id="sqlalchemy">SQLAlchemy</h2>
+<p>SQLAlchemy provides an Object Relational Model (ORM), which stores Python objects to a database representation of the object’s data. That can help you continue to think in a Pythonic way and not be concerned with how the object data will be represented in a database.</p>
+<h3 id="database-interaction">Database Interaction</h3>
+<h4 id="raw-sql">Raw SQL</h4>
+<p>A SQL query getting all of the data in our person table, sorted by last name, would look this this:
+SELECT * FROM person ORDER BY &lsquo;lname&rsquo;;
+This query tells the database engine to get all the fields from the person table and sort them in the default, ascending order using the lname field.
+If you were to run this query against a SQLite database containing the person table, the results would be a set of records containing all the rows in the table, with each row containing the data from all the fields making up a row. Below is an example using the SQLite command line tool running the above query against the person database table:
+sqlite&gt; SELECT * FROM person ORDER BY lname;</p>
+<h4 id="sqlalchemy1">SQLALchemy<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h4>
+<p>Object Oriented Programming allows you to connect data together with behavior, the functions that operate on that data. By creating SQLAlchemy classes, you’re able to connect the fields from the database table rows to behavior, allowing you to interact with the data. Here’s the SQLAlchemy class definition for the data in the person database table:
+class Person(db.Model):
+<strong>tablename</strong> = &lsquo;person&rsquo;
+person_id = db.Column(db.Integer,
+primary_key=True)
+lname = db.Column(db.String)
+fname = db.Column(db.String)
+timestamp = db.Column(db.DateTime,
+default=datetime.utcnow,
+onupdate=datetime.utcnow)</p>
+<p>The class Person inherits from db.Model, which you’ll get to when you start building the program code. For now, it means you’re inheriting from a base class called Model, providing attributes and functionality common to all classes derived from it.</p>
+<p>The rest of the definitions are class-level attributes defined as follows:
+<strong>tablename</strong> = &lsquo;person&rsquo; connects the class definition to the person database table.
+person_id = db.Column(db.Integer, primary_key=True) creates a database column containing an integer acting as the primary key for the table. This also tells the database that person_id will be an autoincrementing Integer value.
+lname = db.Column(db.String) creates the last name field, a database column containing a string value.
+fname = db.Column(db.String) creates the first name field, a database column containing a string value.
+timestamp = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow) creates a timestamp field, a database column containing a date/time value. The default=datetime.utcnow parameter defaults the timestamp value to the current utcnow value when a record is created. The onupdate=datetime.utcnowparameter updates the timestamp with the current utcnow value when the record is updated.</p>
+<p>Note: UTC Timestamps
+You might be wondering why the timestamp in the above class defaults to and is updated by the datetime.utcnow() method, which returns a UTC, or Coordinated Universal Time. This is a way of standardizing your timestamp’s source.
+The source, or zero time, is a line running north and south from the Earth’s north to south pole through the UK. This is the zero time zone from which all other time zones are offset. By using this as the zero time source, your timestamps are offsets from this standard reference point.
+Should your application be accessed from different time zones, you have a way to perform date/time calculations. All you need is a UTC timestamp and the destination time zone.
+If you were to use local time zones as your timestamp source, then you couldn’t perform date/time calculations without information about the local time zones offset from zero time. Without the timestamp source information, you couldn’t do any date/time comparisons or math at all.
+Working with a timestamps based on UTC is a good standard to follow. Here’s a toolkitsite to work with and better understand them.</p>
+<p>Where are you heading with this Person class definition? The end goal is to be able to run a query using SQLAlchemy and get back a list of instances of the Person class. As an example, let’s look at the previous SQL statement:
+SELECT * FROM people ORDER BY lname;
+Show the same small example program from above, but now using SQLAlchemy:
+from models import Person</p>
+<p>people = Person.query.order_by(Person.lname).all()
+for person in people:
+print(f&rsquo;{person.fname} {person.lname}')</p>
+<h2 id="serialization">Serialization</h2>
+<p>Working with SQLAlchemy modeled data inside your programs is very convenient. It is especially convenient in programs that manipulate the data, perhaps making calculations or using it to create presentations on screen. Your application is a REST API essentially providing CRUD operations on the data, and as such it doesn’t perform much data manipulation.
+The REST API works with JSON data, and here you can run into an issue with the SQLAlchemy model. Because the data returned by SQLAlchemy are Python class instances, Connexion can’t serialize these class instances to JSON formatted data. Remember from Part 1 that Connexion is the tool you used to design and configure the REST API using a YAMLfile, and connect Python methods to it.</p>
+<p>In this context, serializing means converting Python objects, which can contain other Python objects and complex data types, into simpler data structures that can be parsed into JSON datatypes, which are listed here:
+• string: a string type
+• number: numbers supported by Python (integers, floats, longs)
+• object: a JSON object, which is roughly equivalent to a Python dictionary
+• array: roughly equivalent to a Python List
+• boolean: represented in JSON as true or false, but in Python as True or False
+• null: essentially a None in Python</p>
+<h4 id="marshmallow">Marshmallow</h4>
+<p>Marshmallow provides functionality to serialize and deserialize Python objects as they flow out of and into our JSON-based REST API. Marshmallow converts Python class instances to objects that can be converted to JSON.</p>
+<p>Your Person class is simple enough so getting the data attributes from it and creating a dictionary manually to return from our REST URL endpoints wouldn’t be very hard. In a more complex application with many larger SQLAlchemy models, this wouldn’t be the case. A better solution is to use a module called Marshmallow to do the work for you.</p>
+<hr>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Adopted from <a href="https://realpython.com/flask-connexion-rest-api-part-2/">https://realpython.com/flask-connexion-rest-api-part-2/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+					</div>
+					<div class="post-comments">
+						
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar">
+  
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-1/">
+        <img class="media-object" src="../../images/blog/blog-post-1.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-1/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-2/">
+        <img class="media-object" src="../../images/blog/blog-post-2.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-2/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-3/">
+        <img class="media-object" src="../../images/blog/blog-post-3.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-3/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-4/">
+        <img class="media-object" src="../../images/blog/blog-post-4.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-4/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="../../categories/artificial-intelligence">Artificial intelligence</a></li>
+      <li><a href="../../categories/cloud">Cloud</a></li>
+      <li><a href="../../categories/company-news">Company news</a></li>
+      <li><a href="../../categories/legacy-support">Legacy support</a></li>
+      <li><a href="../../categories/python">Python</a></li>
+      <li><a href="../../categories/r">R</a></li>
+    </ul>
+  </div> 
+
+  
+  <div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="../../tags/advice">Advice</a></li>
+      <li><a href="../../tags/ai">Ai</a></li>
+      <li><a href="../../tags/android">Android</a></li>
+      <li><a href="../../tags/api">Api</a></li>
+      <li><a href="../../tags/azure">Azure</a></li>
+      <li><a href="../../tags/bigdata">Bigdata</a></li>
+      <li><a href="../../tags/django">Django</a></li>
+      <li><a href="../../tags/docker">Docker</a></li>
+      <li><a href="../../tags/engineering">Engineering</a></li>
+      <li><a href="../../tags/flask">Flask</a></li>
+      <li><a href="../../tags/gcp">Gcp</a></li>
+      <li><a href="../../tags/linux">Linux</a></li>
+      <li><a href="../../tags/mechine">Mechine</a></li>
+      <li><a href="../../tags/ml">Ml</a></li>
+      <li><a href="../../tags/ops">Ops</a></li>
+      <li><a href="../../tags/r-package">R package</a></li>
+      <li><a href="../../tags/retro">Retro</a></li>
+      <li><a href="../../tags/rstudio">Rstudio</a></li>
+      <li><a href="../../tags/set-up">Set up</a></li>
+      <li><a href="../../tags/shiny">Shiny</a></li>
+      <li><a href="../../tags/technology">Technology</a></li>
+      <li><a href="../../tags/viz">Viz</a></li>
+      <li><a href="../../tags/webdev">Webdev</a></li>
+    </ul>
+  </div> 
+</aside>
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="about">About</a></li>
+            
+            <li><a href="project">Project</a></li>
+            
+            <li><a href="service">Service</a></li>
+            
+            <li><a href="pricing">Pricing</a></li>
+            
+            <li><a href="faq">FAQ</a></li>
+            
+            <li><a href="contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2019 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+
+
+
+
+<script src="../../plugins/jQuery/jquery.min.js"></script>
+
+<script src="../../plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../plugins/slick/slick.min.js"></script>
+
+<script src="../../plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="../../plugins/shuffle/shuffle.min.js"></script>
+
+<script src="../../plugins/google-map/gmap.js"></script>
+
+<script src="../../plugins/smartslider3/js/GsapMorphSVGPlugin.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/n2-j.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-gsap.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-webfontloader.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-block-type-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-simple-type-frontend.min"></script>
+
+
+
+
+<script src="../../js/script.min.js"></script>
+
+
+</body>
+
+</html>

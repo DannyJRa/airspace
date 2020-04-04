@@ -124,15 +124,11 @@
 
 
 
-<!-- Call to action -->
-{{ if $data.about.cta.enable }}
-{{ partial "smartslider3_test2.html" . }}
-{{ end }}
-<!-- /Call to action -->
+
 
 <!-- Call to action -->
 {{ if $data.about.cta.enable }}
-{{ partial "healthcare.html" . }}
+{{ partial "orion.html" . }}
 {{ end }}
 <!-- /Call to action -->
 
