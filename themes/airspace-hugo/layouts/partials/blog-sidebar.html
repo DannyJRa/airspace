@@ -43,4 +43,21 @@
     {{- end }}
     {{- end }}
   </div> <!-- End tag  -->
+
+
+  <div class="widget widget-tag"><h3>Last 5 GitHub Commits for this blog</h3>
+    <ul>
+      {{ $gcJ := getJSON "https://api.github.com/repos/dannyjra/DannyJRa.github.io/commits" }}
+      {{range first 5 $gcJ }}
+          <li>
+            <a href="{{ .html_url}}" target="_blank">
+                {{.commit.author.date}}<br>
+                {{.commit.message}}
+            </a>
+          </li>
+      {{end}}
+    </ul>
+  </div>
+
+
 </aside>

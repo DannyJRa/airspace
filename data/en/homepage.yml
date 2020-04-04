@@ -2,17 +2,17 @@
 banner:
   enable : true
   bg_image : "images/slider-bg.jpg"
-  title : "A Digital Marketing <br/> & Design Agency"
-  content : "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  title : "A Digital Transformation <br/> & Advanced Analytics Consultant"
+  content : "Data Science Translator to craft the digital era. I work closely with my clients to deliver  the best possible solutions for their needs"
   button:
     enable : true
-    label : "Discover Our Project"
+    label : "Discover My Projects"
     link : "project"
 
 ############################# About #################################
 about:
   enable : true
-  title : "About Us"
+  title : "About Me"
   description : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
               blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -67,10 +67,11 @@ funfacts:
   description : "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
           blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
   funfact_item:
+    #https://rastasheep.com/ionicons-sprite/
     # funfacts item loop
     - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "Cups Of Coffee"
-      count : "99"
+      name : "Github Commits"
+      count : "15"
       
     # funfacts item loop
     - icon : "ion-ios-glasses-outline" #ionicon pack v2 : https://ionicons.com/v2/
