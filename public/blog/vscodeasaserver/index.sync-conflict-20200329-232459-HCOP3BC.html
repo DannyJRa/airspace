@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>VS-Code as a Server</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.68.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="../../plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/magnific-popup/magnific-popup.css">
+  
+  <link rel="stylesheet" href="../../plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/normalize.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/smartslider.min.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="../../scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../../images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../">
+              <img src="../../images/logo2-200x50.png" alt="Airspace | Creative Agency Hugo Template" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../../">Home</a></li>
+
+              
+              
+              <li><a href="../../about">About</a></li>
+              
+              
+              
+              <li><a href="../../project">Project</a></li>
+              
+              
+              
+              <li><a href="../../service">Service</a></li>
+              
+              
+              
+              <li><a href="../../blog">Blog</a></li>
+              
+              
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a href="../../faq">FAQ</a></li>
+                  
+                  <li><a href="../../pricing">Pricing</a></li>
+                  
+                </ul>
+              </li>
+              
+              
+              
+              <li><a href="../../contact">Contact</a></li>
+              
+              
+
+              
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('/');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>VS-Code as a Server</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">VS-Code as a Server</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> April 27, 2019</li>
+              <li><i class="ion-android-people"></i> Posted By <a class="text-primary" href="../../author/dannyjra">DannyJRa</a></li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="../../tags/engineering">Engineering</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="../../images/blog/70_vscode-ide_BLOG.jpg" alt="VS-Code as a Server">
+					</div>
+					<div class="post-content post-excerpt">
+						<p>Code on your Chromebook, tablet, and laptop with a consistent dev environment. If you have a Windows or Mac workstation, more easily develop for Linux. Take advantage of large cloud servers to speed up tests, compilations, downloads, and more.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<hr>
+<h1 id="1-vs-code-as-a-server">1. VS-Code as a Server</h1>
+<p>Visit this github repo <a href="https://github.com/codercom/code-server">Github</a></p>
+<h1 id="11--download">1.1  Download</h1>
+<p>Copy and download latest version to folder: /vs-code</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd $HOME/vs-code
+
+<span style="color:#75715e">#Replace link with latest version</span>
+<span style="color:#75715e">#wget https://github.com/codercom/code-server/releases/download/1.32.0-310/code-server-1.32.0-310-linux-x64.tar.gz</span>
+wget https://github.com/codercom/code-server/releases/download/1.939-vsc1.33.1/code-server1.939-vsc1.33.1-linux-x64.tar.gz
+</code></pre></div><h1 id="12-unzip-the-targz-file">1.2 Unzip the tar.gz file</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd $HOME/vs-code
+tar xvzf code-server1.939-vsc1.33.1-linux-x64.tar.gz
+</code></pre></div><p>The file code-server is generated and you can execute the file by using following command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Usage
+code-server --help
+code-server can be ran with a number of arguments to customize your working directory, host, port, and SSL certificate.
+
+USAGE
+  $ code-server <span style="color:#f92672">[</span>WORKDIR<span style="color:#f92672">]</span>
+
+ARGUMENTS
+  WORKDIR  <span style="color:#f92672">[</span>default: <span style="color:#f92672">(</span>directory to binary<span style="color:#f92672">)]</span> Specify working dir
+
+OPTIONS
+  -d, --data-dir<span style="color:#f92672">=</span>data-dir
+  -h, --host<span style="color:#f92672">=</span>host          <span style="color:#f92672">[</span>default: 0.0.0.0<span style="color:#f92672">]</span>
+  -o, --open               Open in browser on startup
+  -p, --port<span style="color:#f92672">=</span>port          <span style="color:#f92672">[</span>default: 8443<span style="color:#f92672">]</span> Port to bind on
+  -v, --version            show CLI version
+  --allow-http
+  --cert<span style="color:#f92672">=</span>cert
+  --cert-key<span style="color:#f92672">=</span>cert-key
+  --help                   show CLI help
+  --no-auth
+  --password<span style="color:#f92672">=</span>password
+</code></pre></div><h1 id="13-start-vs-code">1.3 Start VS-Code</h1>
+<p>I am using the following options to set the port, data dir of all extensions and user data and a password to login to the server as the current user:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$HOME/VSCode/code-server -p <span style="color:#ae81ff">8086</span> --data-dir<span style="color:#f92672">=</span>/home/danny/vs-code/data/ --password<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>S_pwd_vscode<span style="color:#e6db74">}</span>
+</code></pre></div><ul>
+<li>Set S_pwd_vscode accordingly</li>
+<li>Give current user access to directories
+sudo chown -R danny $HOME//vs-code/</li>
+</ul>
+<h1 id="2-run-at-startup">2. Run at startup</h1>
+<h1 id="21-via-systemd">2.1 Via Systemd</h1>
+<pre><code>sudo nano /etc/systemd/system/vscode.service
+
+
+Description=Nifi start
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/danny/vs-code/code-server /home/danny/DannyJRa.github.io/ -p 8085 --data-dir=/home/danny/vs-code/data/ --password=insider &gt; /home/danny/vs-code/vscode.log 2&gt;&amp;1
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+Reload services
+
+sudo systemctl daemon-reload
+Enable the service
+
+sudo systemctl enable vscode
+Start the service
+sudo systemctl start vscode
+Check the status of your service
+systemctl status vscode
+</code></pre><p>Reboot your device and the program/script should be running. If it crashes it will attempt to restart</p>
+<h1 id="22-user">2.2 User</h1>
+<p>You can also use systemctl &ndash;user for managing and configuring the service(s), which will operate on your user&rsquo;s service manager, not the one of the system.</p>
+<p>dataflow.service
+sudo nano /etc/systemd/system/dataflow.service
+sudo rm /etc/systemd/system/nifi.service</p>
+<p>/home/danny/nifi/nifi/bin/nifi.sh start</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl enable nifi
+</code></pre></div><p>Start the service
+sudo systemctl start nifi
+Check the status of your service
+systemctl status nifi
+service status nifi</p>
+<h1 id="23-check-if-enabled">2.3 Check if enabled</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl list-unit-files | grep enabled
+</code></pre></div>
+					</div>
+					<div class="post-comments">
+						
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar">
+  
+  <div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-1/">
+        <img class="media-object" src="../../images/blog/blog-post-1.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-1/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-2/">
+        <img class="media-object" src="../../images/blog/blog-post-2.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-2/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-3/">
+        <img class="media-object" src="../../images/blog/blog-post-3.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-3/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="../../blog/blog-post-4/">
+        <img class="media-object" src="../../images/blog/blog-post-4.jpg" alt="How To Wear Bright Shoes">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="../../blog/blog-post-4/">How To Wear Bright Shoes</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur …</p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="../../categories/artificial-intelligence">Artificial intelligence</a></li>
+      <li><a href="../../categories/cloud">Cloud</a></li>
+      <li><a href="../../categories/company-news">Company news</a></li>
+      <li><a href="../../categories/legacy-support">Legacy support</a></li>
+      <li><a href="../../categories/python">Python</a></li>
+      <li><a href="../../categories/r">R</a></li>
+    </ul>
+  </div> 
+
+  
+  <div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="../../tags/advice">Advice</a></li>
+      <li><a href="../../tags/ai">Ai</a></li>
+      <li><a href="../../tags/android">Android</a></li>
+      <li><a href="../../tags/api">Api</a></li>
+      <li><a href="../../tags/azure">Azure</a></li>
+      <li><a href="../../tags/bigdata">Bigdata</a></li>
+      <li><a href="../../tags/django">Django</a></li>
+      <li><a href="../../tags/docker">Docker</a></li>
+      <li><a href="../../tags/engineering">Engineering</a></li>
+      <li><a href="../../tags/flask">Flask</a></li>
+      <li><a href="../../tags/gcp">Gcp</a></li>
+      <li><a href="../../tags/linux">Linux</a></li>
+      <li><a href="../../tags/mechine">Mechine</a></li>
+      <li><a href="../../tags/ml">Ml</a></li>
+      <li><a href="../../tags/ops">Ops</a></li>
+      <li><a href="../../tags/r-package">R package</a></li>
+      <li><a href="../../tags/retro">Retro</a></li>
+      <li><a href="../../tags/rstudio">Rstudio</a></li>
+      <li><a href="../../tags/set-up">Set up</a></li>
+      <li><a href="../../tags/shiny">Shiny</a></li>
+      <li><a href="../../tags/technology">Technology</a></li>
+      <li><a href="../../tags/viz">Viz</a></li>
+      <li><a href="../../tags/webdev">Webdev</a></li>
+    </ul>
+  </div> 
+</aside>
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="about">About</a></li>
+            
+            <li><a href="project">Project</a></li>
+            
+            <li><a href="service">Service</a></li>
+            
+            <li><a href="pricing">Pricing</a></li>
+            
+            <li><a href="faq">FAQ</a></li>
+            
+            <li><a href="contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2019 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+
+
+
+
+<script src="../../plugins/jQuery/jquery.min.js"></script>
+
+<script src="../../plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="../../plugins/slick/slick.min.js"></script>
+
+<script src="../../plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="../../plugins/shuffle/shuffle.min.js"></script>
+
+<script src="../../plugins/google-map/gmap.js"></script>
+
+<script src="../../plugins/smartslider3/js/n2-j.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-gsap.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-webfontloader.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-block-type-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-frontend.min.js"></script>
+
+
+
+
+<script src="../../js/script.min.js"></script>
+
+
+</body>
+
+</html>

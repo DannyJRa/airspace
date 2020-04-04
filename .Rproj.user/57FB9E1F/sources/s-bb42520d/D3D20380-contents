@@ -91,11 +91,6 @@ hasChildren = true
 
   [[menu.main]]
   parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[menu.main]]
-  parent = "Pages"
   name = "Pricing"
   URL = "pricing"
   
@@ -177,9 +172,9 @@ map_marker = "images/marker.png"
 
   
 ############################# social site ########################
-[[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+#[[params.social]]
+#icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+#link = "#"
 
 [[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/

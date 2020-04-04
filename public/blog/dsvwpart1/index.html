@@ -20,6 +20,10 @@
   
   <link rel="stylesheet" href="../../plugins/slick/slick.css">
   
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/normalize.min.css">
+  
+  <link rel="stylesheet" href="../../plugins/smartslider3/css/smartslider.min.css">
+  
 
   <!-- Main Stylesheet -->
   
@@ -81,8 +85,6 @@
                   aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
                 <ul class="dropdown-menu">
                   
-                  <li><a href="../../faq">FAQ</a></li>
-                  
                   <li><a href="../../pricing">Pricing</a></li>
                   
                 </ul>
@@ -125,7 +127,7 @@
 					<h2 class="post-title">DSVM Part1</h2>
 					<div class="post-meta">
 						<ul>
-              <li><i class="ion-calendar"></i> March 1, 2020</li>
+              <li><i class="ion-calendar"></i> June 7, 2018</li>
               <li><i class="ion-android-people"></i> Posted By <a class="text-primary" href="../../author/dannyjra">DannyJRa</a></li>
               <li><i class="ion-pricetags"></i> 
                 
@@ -135,12 +137,12 @@
             </ul>
 					</div>
 					<div class="post-thumb">
-						<img class="img-responsive" src="../../images/blog/blog-post-1.jpg" alt="DSVM Part1">
+						<img class="img-responsive" src="../../images/blog/07_DSVM_Part1_BLOG.jpg" alt="DSVM Part1">
 					</div>
 					<div class="post-content post-excerpt">
-						<p>DSVM Part 1 thftz tz fz</p>
+						<p>DSVM Part 1 &hellip;</p>
 <blockquote>
-<p>The Windows Data Science Virtual Machine (DSVM) is a powerful data science development environment that enables you to perform various data exploration and modeling tasks. The environment comes already built and bundled with several popular data analytics tools that make it easy to get started quickly with your analysis for On-premises, Cloud or hybrid deployments. The DSVM works closely with many Azure services and is able to read and process data that is already stored on Azure, in Azure SQL Data Warehouse, Azure Data Lake, Azure Storage, or in Azure Cosmos DB. It can also leverage other analytics tools such as Azure Machine Learning and Azure Data Factory.[^1]</p>
+<p>The Windows Data Science Virtual Machine (DSVM) is a powerful data science development environment that enables you to perform various data exploration and modeling tasks. The environment comes already built and bundled with several popular data analytics tools that make it easy to get started quickly with your analysis for On-premises, Cloud or hybrid deployments. The DSVM works closely with many Azure services and is able to read and process data that is already stored on Azure, in Azure SQL Data Warehouse, Azure Data Lake, Azure Storage, or in Azure Cosmos DB. It can also leverage other analytics tools such as Azure Machine Learning and Azure Data Factory.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p>In this article, I will adopt the tutorial to needs and learn how to use Azure (Linux) DSVM to perform various data science tasks and interact with other Azure services. Here are some of the things you can do on the DSVM:</p>
 <ol>
@@ -155,41 +157,74 @@
 <li>Dynamically scale your DSVM to meet your project needs</li>
 <li>Install additional tools on your virtual machine</li>
 </ol>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores
-vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem
-ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae ab doloremque accusamus sit, eos dolorum officiis
-a perspiciatis aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, facere.</p>
-<blockquote>
-<p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes
-nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error</p>
-</blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo deserunt necessitatibus quibusdam sint,
-eos explicabo tenetur molestiae vero facere, aspernatur sit mollitia perferendis reiciendis. Deleniti magni
-explicabo sed alias fugit amet animi molestias ipsum maiores. Praesentium sint, id laborum quos. Tempora
-inventore est, dolor corporis quis doloremque nostrum, eos velit culpa quasi labore. Provident laborum porro
-nihil iste, magnam officia nemo praesentium autem, libero vel officiis. Omnis pariatur nam voluptatem voluptate
-at officia repellat ea beatae eligendi? Mollitia error saepe, aperiam facere. Optio maiores deleniti veritatis
-eaque commodi atque aperiam, debitis iste alias eligendi ut facilis earum! Impedit, tempore.</p>
-<pre><code>  .blog-classic {
-  margin-bottom: 70px;
-  padding-bottom: 70px;
-  border-bottom: 1px solid #efefef;
-  }
-</code></pre><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error esse a dolore, architecto sapiente, aliquid
-commodi, laudantium eius nemo enim. Enim, fugit voluptatem rem molestiae. Sed totam quis accusantium iste
-nesciunt id exercitationem cumque repudiandae voluptas perspiciatis, consequatur quasi, molestias, culpa odio
-adipisci. Nesciunt optio fugiat iste quam modi, ex vitae odio pariatur! Corrupti explicabo at harum qui
-doloribus, sit dicta nemo, dolor, enim eum molestias fugiat obcaecati autem eligendi? Nisi delectus eaque
-architecto voluptatibus, unde sit minus quae quod eligendi soluta recusandae doloribus, officia, veritatis
-voluptatum eius aliquam quos. Consectetur, nisi? Veritatis totam, unde nostrum exercitationem tempora suscipit,
-molestias, deserunt ipsum laborum aut iste eaque? Vitae delectus dicta maxime non mollitia? Sapiente eos a quia
-eligendi deserunt repudiandae modi molestias tenetur autem pariatur ullam itaque, quas eveniet, illo quam rerum
-ex obcaecati voluptatum nesciunt incidunt culpa provident illum soluta. Voluptas possimus nesciunt inventore
-perspiciatis neque fugiat, magnam natus repellendus praesentium eum voluptatum, alias incidunt, tempora
-reprehenderit recusandae et numquam itaque ratione dolor voluptatibus in commodi ut! Neque deserunt nostrum
-commodi dolor natus quo, non vitae deleniti, vero voluptatem error aspernatur veniam expedita numquam amet quia
-in dolores velit esse molestiae! Iusto architecto accusantium quisquam recusandae quod vero quia.</p>
+<p>#1. Explore data and develop models locally on the DSVM using RStudio or Python</p>
+<h2 id="using-rstudio-server">Using RStudio Server</h2>
+<p>Prerequiesites are the set-up of Azure services, as accroind to Blog: &hellip;.</p>
+<h3 id="find-the-ip-adress-of-the-dsvm-eg-by-usins-cli-20">Find the ip-adress of the DSVM e.g. by usins CLI 2.0</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(jsonlite)
+code<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;az vm list-ip-addresses&#34;</span>
+a<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">fromJSON</span>(<span style="color:#a6e22e">system</span>(code,intern <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>))
 
+a<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">system</span>(code,intern <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>),<span style="color:#e6db74">&#34;test.json&#34;</span>)
+yelp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fromJSON</span>(<span style="color:#a6e22e">file</span>(<span style="color:#e6db74">&#34;test.json&#34;</span>))
+
+
+yelp_flat <span style="color:#f92672">&lt;-</span> jsonlite<span style="color:#f92672">::</span><span style="color:#a6e22e">flatten</span>(yelp)
+<span style="color:#a6e22e">str</span>(yelp_flat)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tibble)
+yelp_tbl <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as_data_frame</span>(yelp_flat)
+yelp_tbl<span style="color:#f92672">$</span>virtualMachine.network.publicIpAddresses[[1]]<span style="color:#f92672">$</span>ipAddress
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(purrr)
+yelp_flat1 <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">flatten</span>(yelp_flat)
+yelp_flat2 <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">flatten</span>(yelp_flat1)
+yelp_flat3 <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">flatten</span>(yelp_flat2)
+yelp_flat4 <span style="color:#f92672">&lt;-</span> purrr<span style="color:#f92672">::</span><span style="color:#a6e22e">flatten</span>(yelp_flat3)
+
+(ip<span style="color:#f92672">&lt;-</span>yelp_flat4<span style="color:#f92672">$</span>ipAddress)
+</code></pre></div><p>Or you can have set-up a static ip-Adress</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#static ip e.g. </span>
+<span style="color:#75715e">#ip=&#34;23.100.82.85&#34;</span>
+</code></pre></div><p>Generate ssh phrase including password</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#make sure that sshpass is installed on Linux</span>
+ssh <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;sshpass -p .oberstdorf123 &#34;</span>,
+  <span style="color:#e6db74">&#34;ssh -q&#34;</span>,
+             <span style="color:#e6db74">&#34; -o StrictHostKeyChecking=no&#34;</span>,
+             <span style="color:#e6db74">&#34; -o UserKnownHostsFile=/dev/null&#34;</span>,
+             <span style="color:#e6db74">&#34; insider@&#34;</span>,
+             ip)
+</code></pre></div><h3 id="start-r-server">Start R server</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo rstudio-server start&#34;</span>)
+(b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>))
+</code></pre></div><p>Remove folder if create already</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo rm -r /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><p>Create folder</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo mkdir /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><p>Mount drive</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo mount /dev/sdd /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">browseURL</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;http://&#34;</span>,ip,<span style="color:#e6db74">&#34;:8787&#34;</span>))
+</code></pre></div><p>#2.  Use a Jupyter notebook to experiment</p>
+<p>Simply open browser with port 8000 to open Juypter Hub.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">browseURL</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;https://&#34;</span>,ip,<span style="color:#e6db74">&#34;:8000&#34;</span>))
+</code></pre></div><p>Enter your ID and password and will see &hellip;</p>
+<p><img src="img/jupyter_hub.png" alt="Juypter Hub"></p>
+<p>&hellip; to be continued</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Addopted from <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/vm-do-ten-things">https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/vm-do-ten-things</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 					</div>
 					<div class="post-comments">
 						
@@ -253,6 +288,8 @@ in dolores velit esse molestiae! Iusto architecto accusantium quisquam recusanda
       <li><a href="../../categories/cloud">Cloud</a></li>
       <li><a href="../../categories/company-news">Company news</a></li>
       <li><a href="../../categories/legacy-support">Legacy support</a></li>
+      <li><a href="../../categories/python">Python</a></li>
+      <li><a href="../../categories/r">R</a></li>
     </ul>
   </div> 
 
@@ -263,10 +300,26 @@ in dolores velit esse molestiae! Iusto architecto accusantium quisquam recusanda
       <li><a href="../../tags/advice">Advice</a></li>
       <li><a href="../../tags/ai">Ai</a></li>
       <li><a href="../../tags/android">Android</a></li>
+      <li><a href="../../tags/api">Api</a></li>
       <li><a href="../../tags/azure">Azure</a></li>
+      <li><a href="../../tags/bigdata">Bigdata</a></li>
+      <li><a href="../../tags/django">Django</a></li>
+      <li><a href="../../tags/docker">Docker</a></li>
+      <li><a href="../../tags/engineering">Engineering</a></li>
+      <li><a href="../../tags/flask">Flask</a></li>
+      <li><a href="../../tags/gcp">Gcp</a></li>
+      <li><a href="../../tags/linux">Linux</a></li>
       <li><a href="../../tags/mechine">Mechine</a></li>
+      <li><a href="../../tags/ml">Ml</a></li>
+      <li><a href="../../tags/ops">Ops</a></li>
+      <li><a href="../../tags/r-package">R package</a></li>
       <li><a href="../../tags/retro">Retro</a></li>
+      <li><a href="../../tags/rstudio">Rstudio</a></li>
+      <li><a href="../../tags/set-up">Set up</a></li>
+      <li><a href="../../tags/shiny">Shiny</a></li>
       <li><a href="../../tags/technology">Technology</a></li>
+      <li><a href="../../tags/viz">Viz</a></li>
+      <li><a href="../../tags/webdev">Webdev</a></li>
     </ul>
   </div> 
 </aside>
@@ -320,6 +373,18 @@ in dolores velit esse molestiae! Iusto architecto accusantium quisquam recusanda
 <script src="../../plugins/shuffle/shuffle.min.js"></script>
 
 <script src="../../plugins/google-map/gmap.js"></script>
+
+<script src="../../plugins/smartslider3/js/n2-j.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-gsap.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/nextend-webfontloader.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-block-type-frontend.min.js"></script>
+
+<script src="../../plugins/smartslider3/js/smartslider-frontend.min.js"></script>
 
 
 
