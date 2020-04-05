@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="this is meta description">
-  <meta name="author" content="Themefisher">
+  <meta name="author" content="Danny J. Rasch">
   <meta name="generator" content="Hugo 0.68.0" />
 
   <!-- plugins -->
@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="../plugins/smartslider3/css/normalize.min.css">
   
   <link rel="stylesheet" href="../plugins/smartslider3/css/smartslider.min.css">
+  
+  <link rel="stylesheet" href="../plugins/smartslider3/css/litebox.min.css">
   
 
   <!-- Main Stylesheet -->
@@ -45,6 +47,8 @@
 <!-- preloader start -->
 <div class="preloader">
   
+  <img src="../preloader_cloud.gif " alt="preloader">
+  
 </div>
 <!-- preloader end -->
 
@@ -62,7 +66,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="../">
-              <img src="../images/logo2-200x50.png" alt="Airspace | Creative Agency Hugo Template" class="img-responsive">
+              <img src="../images/logo2-200x50.png" alt="Danny J.Rasch | Data &amp; AI Consultant" class="img-responsive">
             </a>
           </div>
           
@@ -70,14 +74,6 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../">Home</a></li>
 
-              
-              
-              <li><a href="../about">About</a></li>
-              
-              
-              
-              <li><a href="../project">Project</a></li>
-              
               
               
               <li><a href="../service">Service</a></li>
@@ -773,6 +769,32 @@ N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],fu
 
 
 
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+
+<div class="calendar">
+    
+    Loading the data just for you.
+</div>
+
+<script>
+    GitHubCalendar(".calendar", "dannyjra");
+    
+    GitHubCalendar(".calendar", "dannyjra", { responsive: true });
+</script>
+
+
+
+
 <footer class="footer">
 	<div class="container">
 		<div class="row">
@@ -780,15 +802,9 @@ N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],fu
 				<div class="footer-manu">
 					<ul>
             
-            <li><a href="about">About</a></li>
-            
-            <li><a href="project">Project</a></li>
-            
             <li><a href="service">Service</a></li>
             
             <li><a href="pricing">Pricing</a></li>
-            
-            <li><a href="faq">FAQ</a></li>
             
             <li><a href="contact">Contact</a></li>
             
@@ -834,6 +850,8 @@ N2R(["smartslider-frontend","nextend-gsap","smartslider-block-type-frontend"],fu
 <script src="../plugins/smartslider3/js/smartslider-frontend.min.js"></script>
 
 <script src="../plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"></script>
+
+<script src="../plugins/smartslider3/js/litebox.min.js"></script>
 
 
 

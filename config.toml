@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "/"
-title = "Airspace | Creative Agency Hugo Template"
+title = "Danny J.Rasch | Data & AI Consultant"
 theme = "airspace-hugo"
 # post pagination
 paginate = "4"
@@ -28,6 +28,8 @@ link = "plugins/slick/slick.css"
 link = "plugins/smartslider3/css/normalize.min.css"
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/smartslider.min.css"
+[[params.plugins.css]]
+link = "plugins/smartslider3/css/litebox.min.css"
 
 # JS Plugins
 
@@ -60,6 +62,10 @@ link = "plugins/smartslider3/js/smartslider-block-type-frontend.min.js"
 link = "plugins/smartslider3/js/smartslider-frontend.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/litebox.min.js"
+
+
 
 
 
@@ -71,15 +77,15 @@ link = "plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"
 ############################## navigation ###############################
 
 # main menu
-[[menu.main]]
-name = "About"
-URL = "about"
-weight = 1
+#[[menu.main]]
+#name = "About"
+#URL = "about"
+#weight = 1
 
-[[menu.main]]
-name = "Project"
-URL = "project"
-weight = 2
+#[[menu.main]]
+#name = "Project"
+#URL = "project"
+#weight = 2
 
 [[menu.main]]
 name = "Service"
@@ -108,15 +114,15 @@ weight = 6
 
 
 # footer menu
-[[menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
+#[[menu.footer]]
+#name = "About"
+#URL = "about"
+#weight = 1
 
-[[menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
+#[[menu.footer]]
+#name = "Project"
+#URL = "project"
+#weight = 2
 
 [[menu.footer]]
 name = "Service"
@@ -128,10 +134,10 @@ name = "Pricing"
 URL = "pricing"
 weight = 4
 
-[[menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
+#[[menu.footer]]
+#name = "FAQ"
+#URL = "faq"
+#weight = 5
 
 [[menu.footer]]
 name = "Contact"
@@ -144,20 +150,20 @@ weight = 6
 logo = "images/logo2-200x50.png"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Danny J. Rasch"
 # Contact Information
-mobile = "0124857985320"
-email = "info@raschadvisory.com"
-location = "North Main Street,Brooklyn Australia"
+mobile = "On request"
+email = "danny@raschadvisory.com"
+location = "Viaduktstrasse 93, 8005 Zurich, Switzerland"
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "https://formspree.io/xwknvgaa" # contact form works with : https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # Your ID
 
 # Preloader
 [params.preloader]
 enable = true
-preloader = "" # use .png , .svg or .gif format
+preloader = "preloader_cloud.gif" # use .png , .svg or .gif format
 
 # search
 [params.search]

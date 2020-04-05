@@ -133,6 +133,11 @@
 {{ end }}
 <!-- /Call to action -->
 
+<!-- Call to action -->
+{{ if $data.about.cta.enable }}
+{{ partial "github_calender.html" . }}
+{{ end }}
+<!-- /Call to action -->
 
 
 {{ end }}

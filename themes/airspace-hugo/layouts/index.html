@@ -2,6 +2,13 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
+
+<!-- Service -->
+{{ if $data.homepage.service.enable }}
+{{ partial "smart_home.html" . }}
+{{ end }}
+<!-- /service -->
+
 <!-- banner -->
 {{ if $data.homepage.banner.enable }}
 {{ with $data.homepage.banner }}
@@ -25,6 +32,12 @@
 {{ end }}
 {{ end }}
 <!-- /banner -->
+
+
+
+
+
+
 
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
