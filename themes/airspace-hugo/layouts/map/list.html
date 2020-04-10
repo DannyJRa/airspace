@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+
+
+<!-- Call to action -->
+{{ if $data.pricing.cta.enable }}
+{{ partial "DataScienceProcess.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+
+
+
+{{ end }}
