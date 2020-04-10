@@ -9,7 +9,7 @@
 {{ end }}
 <!-- /service -->
 
-<!-- banner -->
+<!-- banner
 {{ if $data.homepage.banner.enable }}
 {{ with $data.homepage.banner }}
 <section class="slider" style="background-image: url('{{ .bg_image | absURL }}');">
@@ -31,17 +31,17 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /banner -->
+//banner -->
 
 
 
 
 
 
-
+<!-- about 
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
-<!-- about -->
+
 <section class="about section">
   <div class="container">
     <div class="row">
@@ -62,13 +62,16 @@
     </div>
   </div>
 </section>
-<!-- /about -->
-{{ end }}
-{{ end }}
 
+{{ end }}
+{{ end }}
+//about -->
+
+
+<!-- portfolio
 {{ if $data.homepage.portfolio.enable }}
 {{ with $data.homepage.portfolio }}
-<!-- portfolio -->
+
 <section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
   <div class="container">
     <div class="row">
@@ -84,25 +87,34 @@
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+
 {{ end }}
 {{ end }}
 
-<!-- Service -->
+//portfolio -->
+
+
+<!-- Service 
 {{ if $data.homepage.service.enable }}
 {{ partial "service.html" . }}
 {{ end }}
-<!-- /service -->
+//-->
 
-<!-- Call to action -->
+<!-- Call to action 
 {{ if $data.homepage.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
-<!-- /Call to action -->
+//Call to action -->
 
+
+
+
+
+
+<!-- Content Start 
 {{ if $data.homepage.funfacts.enable }}
 {{ with $data.homepage.funfacts }}
-<!-- Content Start -->
+
 <section class="testimonial">
   <div class="container">
     <div class="row">
@@ -146,5 +158,6 @@
 </section>
 {{ end}}
 {{ end}}
+//Call to action -->
 
 {{ end }}

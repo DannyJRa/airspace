@@ -1,6 +1,6 @@
 ---
 bg_image: images/featue-bg.jpg
-description: this is meta description
+description: 
 draft: false
-title: Blog
+title: My personal blog about Data & AI topics
 ---

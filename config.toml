@@ -87,25 +87,25 @@ link = "plugins/smartslider3/js/litebox.min.js"
 #URL = "project"
 #weight = 2
 
-[[menu.main]]
-name = "Service"
-URL = "service"
-weight = 3
+#[[menu.main]]
+#name = "Service"
+#URL = "service"
+#weight = 3
 
 [[menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
+#[[menu.main]]
+#weight = 5
+#name = "Pages"
+#hasChildren = true
 
-  [[menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
+#  [[menu.main]]
+#  parent = "Pages"
+#  name = "Pricing"
+#  URL = "pricing"
   
 [[menu.main]]
 name = "Contact"
@@ -124,20 +124,20 @@ weight = 6
 #URL = "project"
 #weight = 2
 
-[[menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
+#[[menu.footer]]
+#name = "Service"
+#URL = "service"
+#weight = 3
 
 #[[menu.footer]]
-#name = "FAQ"
-#URL = "faq"
-#weight = 5
+#name = "Pricing"
+#URL = "pricing"
+#weight = 4
+
+[[menu.footer]]
+name = "Blog"
+URL = "blog"
+weight = 5
 
 [[menu.footer]]
 name = "Contact"
@@ -152,7 +152,7 @@ logo = "images/logo2-200x50.png"
 description = "This is meta description"
 author = "Danny J. Rasch"
 # Contact Information
-mobile = "On request"
+#mobile = "On request"
 email = "danny@raschadvisory.com"
 location = "Viaduktstrasse 93, 8005 Zurich, Switzerland"
 # contact form action
@@ -162,7 +162,7 @@ google_analitycs_id = "" # Your ID
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "preloader_cloud.gif" # use .png , .svg or .gif format
 
 # search
@@ -178,12 +178,12 @@ link = "contact"
 # google map
 [params.gmap]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC5phCl-eIY5jK0YjnnA-Tq-FjkLH0kETU&libraries=places"
+map_latitude = "47.3849263"
+map_longitude = "8.5187329"
 map_marker = "images/marker.png"
 
-  
+
 ############################# social site ########################
 #[[params.social]]
 #icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
@@ -191,23 +191,23 @@ map_marker = "images/marker.png"
 
 [[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+link = "https://www.linkedin.com/in/danny-rasch-2a22771b/"
 
-[[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+#[[params.social]]
+#icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+#link = "#"
 
-[[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+#[[params.social]]
+#icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+#link = "#"
 
 [[params.social]]
 icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+link = "https://twitter.com/Insider_DJR"
 
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+#[[params.social]]
+#icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+#link = "#"
 
 
 ################################ English Language ########################
@@ -218,7 +218,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2020 [DJR](https://dannyrasch.com) All Rights Reserved"
 
 ################################ France Language ########################
 #[Languages.fr]
