@@ -152,7 +152,8 @@ logo = "images/logo2-200x50.png"
 description = "This is meta description"
 author = "Danny J. Rasch"
 # Contact Information
-#mobile = "On request"
+mobile = "077"
+phone = "On request"
 email = "danny@raschadvisory.com"
 location = "Viaduktstrasse 93, 8005 Zurich, Switzerland"
 # contact form action
