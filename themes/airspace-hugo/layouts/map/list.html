@@ -6,13 +6,19 @@
 
 
 
-<!-- Call to action --->
+<!-- Call to action ---
 {{ if $data.pricing.cta.enable }}
 {{ partial "DataScienceProcess.html" . }}
 {{ end }}
-<!-- /Call to action -->
+//Call to action -->
 
+<iframe src="DataScienceProcess.html" name="sidebar" width="1280" height="800"></iframe>
 
+<iframe src="ggplotlyBubblechart.html" name="sidebar" width="1280" height="800"></iframe>
 
-
+<!-- Call to action ---
+{{ if $data.pricing.cta.enable }}
+{{ partial "ggplotlyBubblechart.html" . }}
+{{ end }}
+-- Call to action --->
 {{ end }}
