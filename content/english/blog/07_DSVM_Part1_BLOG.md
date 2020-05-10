@@ -8,7 +8,7 @@ categories:
 tags:
   - Azure
 hidden: false
-image: images/blog/07_DSVM_Part1_BLOG.jpg
+image: images/blog/dsvm_review_header.jpg"
 share: false
 output:
   html_document:
