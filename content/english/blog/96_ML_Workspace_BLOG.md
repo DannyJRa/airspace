@@ -131,7 +131,7 @@ browseURL(paste0("https://",ip,":8000"))
 
 Enter your ID and password and will see ...
 
-![Juypter Hub](/images/blog/jupyter_hub.png)
+![Juypter Hub](/images/blog/jupyter_hub_BLOG.png)
 
 
 
