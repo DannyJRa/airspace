@@ -151,9 +151,9 @@
 <h2 id="how-do-you-install-portainer">How Do You Install Portainer?</h2>
 <p>Portainer is easy to install because it is a Docker container. If you’ve installed other Docker containers (and if you haven’t you’re probably not interested in a Docker container management tool) this is just as easy. Assuming you already have Docker installed, create a volume and run the container:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker volume create portainer_data
-docker run -d -p 8999:8999 --name portainer2 --restart always <span style="color:#ae81ff">\</span>
--v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\</span>
--v $HOME/docker/volumes/portainer:/data portainer/portainer
+docker run -d -p 8999:8999 --name portainer2 --restart always <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>-v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>-v $HOME/docker/volumes/portainer:/data portainer/portainer
 </code></pre></div><p>Portainer is now running as a container, check it using the docker ps command.</p>
 <pre><code>docker ps
 </code></pre><p>And you will get the result as below.
