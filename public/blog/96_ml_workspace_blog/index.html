@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>Linux</title>
+  <title>DataScience Workspace</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,7 +103,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Linux</h1>
+          <h1>DataScience Workspace</h1>
           <p></p>
         </div>
       </div>
@@ -111,49 +111,85 @@
   </div>
 </section>
 
-<div class="page-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        
-        
-        <div class="post">
-          <div class="post-media post-thumb">
-            <a href="../../blog/installing-nginx-server/">
-              <img src="../../images/blog/72_Nginx_BLOG.png" alt="Installing Nginx Server">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="../../blog/installing-nginx-server/">Installing Nginx Server</a></h3>
-          <div class="post-meta">
-            <ul>
-              <li><i class="ion-calendar"></i> May 9, 2019</li>
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">DataScience Workspace</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> January 15, 2020</li>
               <li><i class="ion-android-people"></i> Posted By <a class="text-primary" href="../../author/dannyjra">DannyJRa</a></li>
               <li><i class="ion-pricetags"></i> 
                 
-                <a href="../../tags/shiny">Shiny</a>
-								
-                , <a href="../../tags/rstudio">Rstudio</a>
-								
-                , <a href="../../tags/linux">Linux</a>
+                <a href="../../tags/azure">Azure</a>
 								
               </li>
             </ul>
-          </div>
-          <div class="post-content">
-            <p>Installing Nginx Server How To Install Nginx on Ubuntu 18.04[^1] Introduction Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet.</p>
-            <a href="../../blog/installing-nginx-server/" class="btn btn-main">Continue Reading</a>
-          </div>
-        </div>
-        
-        
-				
-				
-				
-				
-				
-				
-				
-      </div>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="../../img/07_DSVM_Part1_BLOG.jpg" alt="DataScience Workspace">
+					</div>
+					<div class="post-content post-excerpt">
+						<p>ML Workspace &hellip;</p>
+<blockquote>
+<p>The Windows Data Science Virtual Machine (DSVM) is a powerful data science development environment that enables you to perform various data exploration and modeling tasks. The environment comes already built and bundled with several popular data analytics tools that make it easy to get started quickly with your analysis for On-premises, Cloud or hybrid deployments. The DSVM works closely with many Azure services and is able to read and process data that is already stored on Azure, in Azure SQL Data Warehouse, Azure Data Lake, Azure Storage, or in Azure Cosmos DB. It can also leverage other analytics tools such as Azure Machine Learning and Azure Data Factory.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<h1 id="ml-workspace">ML Workspace</h1>
+<p><a href="https://github.com/ml-tooling/ml-workspace#faq">https://github.com/ml-tooling/ml-workspace#faq</a></p>
+<h1 id="spark">Spark</h1>
+<p>docker run -d -p 8891:8080 &ndash;name &ldquo;WS_spark3&rdquo; -v &ldquo;${PWD}:/workspace&rdquo; mltooling/ml-workspace-spark:latest</p>
+<p>docker stop &ldquo;WS_spark3&rdquo;</p>
+<h1 id="add-new-workspace">Add new workspace</h1>
+<p>docker run -p 8891:8080 mltooling/ml-workspace:latest</p>
+<p>docker run -d -p 8891:8080 &ndash;name &ldquo;ml-workspace2&rdquo; -v &ldquo;${PWD}:/workspace&rdquo; mltooling/ml-workspace:latest</p>
+<p>docker build -t workspace .</p>
+<p>docker run -d -p 8891:8080 &ndash;name &ldquo;ml-workspace3&rdquo; -v &ldquo;${PWD}:/workspace&rdquo; workspace:latest</p>
+<p>docker run -p 8080:8080 mltooling/ml-workspace-spark:latest</p>
+<p>docker stop &ldquo;ml-workspace3&rdquo;</p>
+<h1 id="spark-1">Spark</h1>
+<p>docker run -d -p 8891:8080 &ndash;name &ldquo;WS_spark3&rdquo; -v &ldquo;${PWD}:/workspace&rdquo; mltooling/ml-workspace-spark:latest</p>
+<p>docker stop &ldquo;WS_spark3&rdquo;</p>
+<h3 id="start-r-server">Start R server</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo rstudio-server start&#34;</span>)
+(b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>))
+</code></pre></div><p>Remove folder if create already</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo rm -r /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><p>Create folder</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo mkdir /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><p>Mount drive</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">cmd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(ssh, <span style="color:#e6db74">&#34;sudo mount /dev/sdd /home/insider/R&#34;</span>)
+cmd
+
+b<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">system</span>(cmd, intern<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">browseURL</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;http://&#34;</span>,ip,<span style="color:#e6db74">&#34;:8787&#34;</span>))
+</code></pre></div><p>#2.  Use a Jupyter notebook to experiment</p>
+<p>Simply open browser with port 8000 to open Juypter Hub.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">browseURL</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;https://&#34;</span>,ip,<span style="color:#e6db74">&#34;:8000&#34;</span>))
+</code></pre></div><p>Enter your ID and password and will see &hellip;</p>
+<p><img src="img/jupyter_hub.png" alt="Juypter Hub"></p>
+<p>&hellip; to be continued</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Addopted from <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/vm-do-ten-things">https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/vm-do-ten-things</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+					</div>
+					<div class="post-comments">
+						
+					</div>
+				</div>
+			</div>
       <div class="col-md-4">
         <aside class="sidebar">
   
@@ -292,9 +328,9 @@
 
 </aside>
       </div>
-    </div>
-  </div>
-</div>
+		</div>
+	</div>
+</section>
 
 <footer class="footer">
 	<div class="container">
