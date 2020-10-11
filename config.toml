@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "/"
-title = "Danny J.Rasch | Data & AI Consultant"
+title = "Danny J. Rasch | Data & AI Consultant"
 theme = "airspace-hugo"
 # post pagination
 paginate = "4"
@@ -97,20 +97,20 @@ name = "Blog"
 URL = "blog"
 weight = 4
 
-[[menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
+#[[menu.main]]
+#weight = 5
+#name = "Pages"
+#hasChildren = true
 
-  #[[menu.main]]
-  #parent = "Pages"
-  #name = "Pricing"
-  #URL = "pricing"
+#  #[[menu.main]]
+#  #parent = "Pages"
+#  #name = "Pricing"
+#  #URL = "pricing"
   
-  [[menu.main]]
-  parent = "Pages"
-  name = "Map"
-  URL = "map"
+#  [[menu.main]]
+#  parent = "Pages"
+#  name = "Map"
+#  URL = "map"
   
 [[menu.main]]
 name = "Contact"
@@ -152,7 +152,8 @@ weight = 6
 
 #################### default parameters ################################
 [params]
-logo = "images/logo2-200x50.png"
+#logo = "images/logo2-200x50.png"
+logo = "images/logo_1.png"
 # Meta data
 description = "This is meta description"
 author = "Danny J. Rasch"
@@ -184,11 +185,10 @@ link = "contact"
 # google map
 [params.gmap]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC5phCl-eIY5jK0YjnnA-Tq-FjkLH0kETU&libraries=places"
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyApGdw4oMFQN-Uh6ZN62q2U4TwnTyjPJGM&libraries=places"
 map_latitude = "47.3849263"
 map_longitude = "8.5187329"
 map_marker = "images/marker.png"
-
 
 ############################# social site ########################
 #[[params.social]]
