@@ -152,7 +152,8 @@ weight = 6
 
 #################### default parameters ################################
 [params]
-logo = "images/logo2-200x50.png"
+#logo = "images/logo2-200x50.png"
+logo = "images/logo_1.png"
 # Meta data
 description = "This is meta description"
 author = "Danny J. Rasch"

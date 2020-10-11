@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>Pipenv</title>
+  <title>Azure</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,7 +103,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Pipenv</h1>
+          <h1>Azure</h1>
           <p></p>
         </div>
       </div>
@@ -111,63 +111,91 @@
   </div>
 </section>
 
-<section class="page-wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="post post-single">
-					<h2 class="post-title">Pipenv</h2>
-					<div class="post-meta">
-						<ul>
-              <li><i class="ion-calendar"></i> January 25, 2019</li>
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+        
+        <div class="post">
+          <div class="post-media post-thumb">
+            <a href="/blog/bigdata_with_spark/">
+              <img src="/images/blog/05_BLOG.png" alt="BigData with Spark">
+            </a>
+          </div>
+          <h3 class="post-title"><a href="/blog/bigdata_with_spark/">BigData with Spark</a></h3>
+          <div class="post-meta">
+            <ul>
+              <li><i class="ion-calendar"></i> June 5, 2018</li>
               <li><i class="ion-android-people"></i> Posted By <a class="text-primary" href="/author/dannyjra">DannyJRa</a></li>
               <li><i class="ion-pricetags"></i> 
                 
-                <a href="/tags/engineering">Engineering</a>
+                <a href="/tags/bigdata">Big data</a>
+								
+                , <a href="/tags/azure">Azure</a>
 								
               </li>
             </ul>
-					</div>
-					<div class="post-thumb">
-						<img class="img-responsive" src="/images/blog/19_pipenv_BLOG.gif" alt="Pipenv">
-					</div>
-					<div class="post-content post-excerpt">
-						<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<h1 id="pipenv-tool-for-python-package-management">Pipenv tool for Python package management</h1>
-<h2 id="why-using-pipenv">Why using pipenv</h2>
-<p>Instead of needing the pip library for package installation, plus a library for creating a virtual environment,plus a library for managing virtual environments, plus all the commands associated with those libraries, one can just just Pipenv.</p>
-<p>Pipenv ships with package management and virtual environment support, so you can use one tool to install, uninstall, track, and document your dependencies and to create, use, and organize your virtual environments. When you start a project with it, Pipenv will automatically create a virtual environment for that project if you aren&rsquo;t already using one.
-Pipenv accomplishes this dependency management by abandoning the requirements.txt norm and trading it for a new document called a Pipfile. When you install a library with Pipenv, a Pipfile for your project is automatically updated with the details of that installation, including version information and possibly the Git repository location, file path, and other information.</p>
-<p>Furthermore, Pipenv wants to make it easier to manage complex interdependencies. Your app might depend on a specific version of a library, and that library might depend on a specific version of another library, and it&rsquo;s just dependencies and turtles all the way down. When two libraries your app uses have conflicting dependencies, your life can become hard. Pipenv wants to ease that pain by keeping track of a tree of your app&rsquo;s interdependencies in a file called Pipfile.lock. Pipfile.lock also verifies that the right versions of dependencies are used in production.</p>
-<h2 id="install-pipenv">Install pipenv</h2>
-<p>Using Pipenv, which gives you Pipfile, lets you avoid these problems by managing dependencies for different environments for you. This command will install the main project dependencies (install with user option, otherwise access writes issues)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip3 install --user pipenv
-</code></pre></div><p>Installing a package (e.g. django) is as easy as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install django
-</code></pre></div><p>Have a look at all installed packages</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv graph
-</code></pre></div><h3 id="further-usefull-commands">Further usefull commands</h3>
-<p>Where is the local folder of the packages</p>
-<pre><code>pipenv --venv
-</code></pre><p>Project home</p>
-<pre><code>pipenv --whre
-</code></pre><p>Install from requirements.txt</p>
-<pre><code>pipenv install -r requirements.txt
-</code></pre><p>Or create requirements.txt</p>
-<pre><code>pipenv lock -r &gt; requirements.txt
-</code></pre><p>Set environment variables</p>
-<pre><code>export PIPENV_DEFAULT_PYTHON_VERSION=&quot;--three&quot;
-</code></pre><p>Execute shell command within environment</p>
-<pre><code>pipenv run test.py
-</code></pre><hr>
-<p>Original post on Github Pages: <!-- raw HTML omitted --><a href="https://dannyjra.github.io/19_Pipenv/19_Pipenv_BLOG.html">https://dannyjra.github.io/19_Pipenv/19_Pipenv_BLOG.html</a><!-- raw HTML omitted --></p>
-
-					</div>
-					<div class="post-comments">
+          </div>
+          <div class="post-content">
+            <p><p>Original post here: <a href="https://dannyjra.github.io/05_Blog_BigData_Spark/01_blog_caret_Tut.html">https://dannyjra.github.io/05_Blog_BigData_Spark/01_blog_caret_Tut.html</a></p>
+<p>Add summary desdcription of blog</p></p>
+            <a href="/blog/bigdata_with_spark/" class="btn btn-main">Continue Reading</a>
+          </div>
+        </div>
+        
+        
+				
+				
+				
+				
+				
+				
+				
+				<nav class="text-center">
+					<ul class="pagination post-pagination">
 						
-					</div>
-				</div>
-			</div>
+						
+						<li>
+							<a href="/tags/azure/" class="page-link">Prev</a>
+            </li>
+            
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="">
+							<a href="/tags/azure/">
+								1
+							</a>
+						</li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class=" active ">
+							<a href="/tags/azure/page/2/">
+								2
+							</a>
+						</li>
+						
+						
+						
+						
+					</ul>
+				</nav>
+				
+      </div>
       <div class="col-md-4">
         <aside class="sidebar">
   
@@ -306,9 +334,9 @@ Pipenv accomplishes this dependency management by abandoning the requirements.tx
 
 </aside>
       </div>
-		</div>
-	</div>
-</section>
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
 	<div class="container">
