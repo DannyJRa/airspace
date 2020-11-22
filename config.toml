@@ -98,20 +98,20 @@ URL = "https://dannyrasch.netlify.app/" #"blog"
 weight = 4
 
 
-#[[menu.main]]
-#weight = 5
-#name = "Pages"
-#hasChildren = true
+[[menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
 
-#  #[[menu.main]]
-#  #parent = "Pages"
-#  #name = "Pricing"
-#  #URL = "pricing"
+  #[[menu.main]]
+  #parent = "Pages"
+  #name = "Pricing"
+  #URL = "pricing"
   
-#  [[menu.main]]
-#  parent = "Pages"
-#  name = "Map"
-#  URL = "map"
+  [[menu.main]]
+  parent = "Pages"
+  name = "Map"
+  URL = "map"
   
 [[menu.main]]
 name = "Contact"
