@@ -22,7 +22,7 @@ output:
 geometry: margin = 1.2in
 fontsize: 10pt
 always_allow_html: yes
-
+type: post
 ---
 
 
@@ -32,9 +32,7 @@ DSVM Part 1 thftz tz fz
 
 
 
-
-
-
+<a href="https://themes.gohugo.io//theme/airspace-hugo/blog/blog-post-1/" class="post-social-share">Continue Reading</a>
 
 
 

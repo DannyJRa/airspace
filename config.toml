@@ -74,7 +74,7 @@ link = "plugins/smartslider3/js/litebox.min.js"
 
 
   
-############################## navigation ###############################
+############################## navigation ################################
 
 # main menu
 #[[menu.main]]
@@ -92,10 +92,10 @@ link = "plugins/smartslider3/js/litebox.min.js"
 #URL = "service"
 #weight = 3
 
-#[[menu.main]]
-#name = "Blog"
-#URL = "blog"
-#weight = 4
+[[menu.main]]
+name = "Blog"
+URL = "https://dannyrasch.netlify.app/" #"blog"
+weight = 4
 
 #[[menu.main]]
 #weight = 5
@@ -235,3 +235,5 @@ copyright = "Copyright &copy; 2020 [DJR](https://dannyrasch.com) All Rights Rese
 #home = "Accueil"
 # copyright
 #copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
