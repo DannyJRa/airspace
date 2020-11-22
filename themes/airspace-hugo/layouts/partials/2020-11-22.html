@@ -595,17 +595,11 @@ reproducible analyses, and develop data products. </p>
 </div>
 
 <script>
-    GitHubCalendar(".calendar", "dannyjra");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "dannyjra", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "dannyjra", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=$`)
-       }
-    }).then(r => r.text())
+
 </script></div></div><style type="text/css">.calendar {
     font-family: Helvetica, arial;
     border: 0px solid #DDDDDD;
