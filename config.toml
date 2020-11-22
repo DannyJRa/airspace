@@ -74,7 +74,7 @@ link = "plugins/smartslider3/js/litebox.min.js"
 
 
   
-############################## navigation ###############################
+############################## navigation ################################
 
 # main menu
 #[[menu.main]]
@@ -99,20 +99,21 @@ link = "plugins/smartslider3/js/litebox.min.js"
 #weight = 4
 
 
-#[[menu.main]]
-#weight = 5
-#name = "Pages"
-#hasChildren = true
 
-#  #[[menu.main]]
-#  #parent = "Pages"
-#  #name = "Pricing"
-#  #URL = "pricing"
+[[menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+  #[[menu.main]]
+  #parent = "Pages"
+  #name = "Pricing"
+  #URL = "pricing"
   
-#  [[menu.main]]
-#  parent = "Pages"
-#  name = "Map"
-#  URL = "map"
+  [[menu.main]]
+  parent = "Pages"
+  name = "Map"
+  URL = "map"
   
 [[menu.main]]
 name = "Contact"
@@ -237,3 +238,5 @@ copyright = "Copyright &copy; 2020 [DJR](https://dannyrasch.com) All Rights Rese
 #home = "Accueil"
 # copyright
 #copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
