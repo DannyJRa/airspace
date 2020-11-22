@@ -92,10 +92,19 @@ link = "plugins/smartslider3/js/litebox.min.js"
 #URL = "service"
 #weight = 3
 
+<<<<<<< HEAD
 [[menu.main]]
 name = "Blog"
 URL = "https://dannyrasch.netlify.app/" #"blog"
 weight = 4
+=======
+
+#[[menu.main]]
+#name = "Blog"
+#URL = "blog"
+#weight = 4
+>>>>>>> 2a02148bad71a0353de98aecab04996822d29153
+
 
 #[[menu.main]]
 #weight = 5
