@@ -76,27 +76,24 @@ link = "plugins/smartslider3/js/litebox.min.js"
   
 ############################## navigation ################################
 
-# main menu
-#[[menu.main]]
-#name = "About"
-#URL = "about"
-#weight = 1
+ main menu
+[[menu.main]]
+name = "About"
+URL = "about"
+weight = 1
 
 #[[menu.main]]
 #name = "Project"
 #URL = "project"
 #weight = 2
 
-#[[menu.main]]
-#name = "Service"
-#URL = "service"
-#weight = 3
-
-
 [[menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
+name = "Service"
+URL = "service"
+weight = 3
+
+
+
 
 [[menu.main]]
 name = "Blog2"
@@ -118,6 +115,12 @@ hasChildren = true
   parent = "Pages"
   name = "Map"
   URL = "map"
+
+  [[menu.main]]
+  parent="Pages"
+  name = "Blog"
+  URL = "blog"
+
   
 [[menu.main]]
 name = "Contact"
