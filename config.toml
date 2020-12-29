@@ -65,6 +65,10 @@ link = "plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/litebox.min.js"
 
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/particle.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/smartslider-carousel-single-type-frontend.min.js"
 
 
 
