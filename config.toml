@@ -111,21 +111,21 @@ hasChildren = true
   #name = "Pricing"
   #URL = "pricing"
   
-  [[menu.main]]
-  parent = "Pages"
-  name = "Map"
-  URL = "map"
-
-  [[menu.main]]
-  parent="Pages"
-  name = "Blog"
-  URL = "blog"
-
-  
-  [[menu.main]]
-  parent="Pages"
-  name = "Contact"
-  URL = "contact"
+  #[[menu.main]]
+  #parent = "Pages"
+  #name = "Map"
+  #URL = "map"
+#
+  #[[menu.main]]
+  #parent="Pages"
+  #name = "Blog"
+  #URL = "blog"
+#
+  #
+  #[[menu.main]]
+  #parent="Pages"
+  #name = "Contact"
+  #URL = "contact"
   #weight = 6
 
 
