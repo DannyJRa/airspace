@@ -132,10 +132,10 @@ weight = 6
 
 
 # footer menu
-#[[menu.footer]]
-#name = "About"
-#URL = "about"
-#weight = 1
+[[menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
 
 #[[menu.footer]]
 #name = "Project"
@@ -154,7 +154,7 @@ weight = 6
 
 [[menu.footer]]
 name = "Blog"
-URL = "blog"
+URL = "https://blog.raschadvisory.com"
 weight = 5
 
 [[menu.footer]]
@@ -238,7 +238,7 @@ contentDir = "content/english"
 weight = 1
 home = "Service"
 # copyright
-copyright = "Copyright &copy; 2020 [DJR](https://dannyrasch.com) All Rights Reserved"
+copyright = "Copyright &copy; 2021 [DJR](https://raschadvisory.com) All Rights Reserved"
 
 ################################ France Language ########################
 #[Languages.fr]
