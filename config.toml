@@ -163,7 +163,7 @@ weight = 6
 
 #################### default parameters ################################
 [params]
-logo = "images/Logo_website_title@3x.png"
+logo = "images/Asset3.png"
 #logo = "images/logo2-200x50.png"
 #logo = "images/logo_1.png"
 # Meta data
