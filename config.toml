@@ -82,7 +82,7 @@ link = "plugins/smartslider3/js/smartslider-carousel-single-type-frontend.min.js
 
 #main menu
 [[menu.main]]
-name = "About"
+name = "About Me"
 URL = "about"
 weight = 1
 
@@ -105,20 +105,20 @@ URL = "https://blog.raschadvisory.com"
 weight = 6
 
 
-[[menu.main]]
-weight = 5
-name = "Topics"
-hasChildren = true
-
-  #[[menu.main]]
-  #parent = "Pages"
-  #name = "Pricing"
-  #URL = "pricing"
-  
-  [[menu.main]]
-  parent = "Topics"
-  name = "Map"
-  URL = "map"
+#[[menu.main]]
+#weight = 5
+#name = "Topics"
+#hasChildren = true
+#
+#  #[[menu.main]]
+#  #parent = "Pages"
+#  #name = "Pricing"
+#  #URL = "pricing"
+#  
+#  [[menu.main]]
+#  parent = "Topics"
+#  name = "Map"
+#  URL = "map"
 
 #[[menu.main]]
 #parent="Topics"
@@ -134,7 +134,7 @@ hasChildren = true
 
 # footer menu
 [[menu.footer]]
-name = "About"
+name = "About Me"
 URL = "about"
 weight = 1
 
