@@ -240,7 +240,7 @@ contentDir = "content/english"
 weight = 1
 home = "Service"
 # copyright
-copyright = "Copyright &copy; 2021 [DJR](https://raschadvisory.com) All Rights Reserved"
+copyright = "Copyright &copy; 2021 [Danny J. Rasch ](https://raschadvisory.com) All Rights Reserved"
 
 ################################ France Language ########################
 #[Languages.fr]
@@ -250,4 +250,4 @@ copyright = "Copyright &copy; 2021 [DJR](https://raschadvisory.com) All Rights R
 #weight = 2
 #home = "Accueil"
 # copyright
-#copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+#copyright = "Copyright &copy; 2021 [Danny J. Rasch ](https://raschadvisory.com) All Rights Reserved"
