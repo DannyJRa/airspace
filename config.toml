@@ -30,7 +30,8 @@ link = "plugins/smartslider3/css/normalize.min.css"
 link = "plugins/smartslider3/css/smartslider.min.css"
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/litebox.min.css"
-
+[[params.plugins.css]]
+link = "plugins/smartslider3/css/fontawesome.min.css"
 # JS Plugins
 
 [[params.plugins.js]]
@@ -49,7 +50,7 @@ link = "plugins/google-map/gmap.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/GsapMorphSVGPlugin.min.js"
 [[params.plugins.js]]
-link = "plugins/smartslider3/js/n2-j.min.js"
+link = "plugins/smartslider3/js/n2.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/nextend-frontend.min.js"
 [[params.plugins.js]]
@@ -69,7 +70,14 @@ link = "plugins/smartslider3/js/litebox.min.js"
 link = "plugins/smartslider3/js/particle.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/smartslider-carousel-single-type-frontend.min.js"
-
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-block.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-carousel-single.min"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/w-arrow-image.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/w-bullet.min.js"
 
 
 
