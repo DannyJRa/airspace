@@ -15,7 +15,8 @@ disableLanguages = []
 #################################### Plugins ##############################
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/n2.min.js"
-
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/n2-j.min.js"
 
 ## Smartslider3
 [[params.plugins.css]]
