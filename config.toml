@@ -15,49 +15,27 @@ disableLanguages = []
 #################################### Plugins ##############################
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/n2.min.js"
+
 [[params.plugins.js]]
-link = "plugins/smartslider3/js/n2-j.min.js"
+link = "plugins/smartslider3/js/smartslider-frontend.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-block.min.js"
+
+
 
 ## Smartslider3
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/normalize.min.css"
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/smartslider.min.css"
-[[params.plugins.css]]
-link = "plugins/smartslider3/css/litebox.min.css"
+
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/fontawesome.min.css"
 # JS Plugins
 
-[[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-[[params.plugins.js]]
-link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
-[[params.plugins.js]]
-link = "plugins/shuffle/shuffle.min.js"
-[[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
-
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/GsapMorphSVGPlugin.min.js"
 
 
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/particle.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/smartslider-carousel-single-type-frontend.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/ss-block.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/ss-carousel-single.min"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/w-arrow-image.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/w-bullet.min.js"
+
 
 
 
@@ -71,20 +49,6 @@ link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
 
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/nextend-frontend.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/nextend-gsap.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/nextend-webfontloader.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/smartslider-block-type-frontend.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/smartslider-frontend.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/smartslider-simple-type-frontend.min.js"
-[[params.plugins.js]]
-link = "plugins/smartslider3/js/litebox.min.js"
 
   
 ############################## navigation ################################
