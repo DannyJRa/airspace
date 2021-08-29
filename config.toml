@@ -15,7 +15,6 @@ disableLanguages = []
 #################################### Plugins ##############################
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/n2.min.js"
-
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/smartslider-frontend.min.js"
 [[params.plugins.js]]
@@ -29,7 +28,6 @@ link = "plugins/smartslider3/js/ss-simple.min.js"
 link = "plugins/smartslider3/css/normalize.min.css"
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/smartslider.min.css"
-
 [[params.plugins.css]]
 link = "plugins/smartslider3/css/fontawesome.min.css"
 # JS Plugins
