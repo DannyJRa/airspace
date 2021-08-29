@@ -14,4 +14,8 @@ git merge seotweaks
 
 Aus <https://stackoverflow.com/questions/2862590/how-to-replace-master-branch-in-git-entirely-from-another-branch> 
 
-test
+test2
+
+
+git config --global user.email "danny_zurich@outlook.com"
+git config --global user.name "DannyJRa"
