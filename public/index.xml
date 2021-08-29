@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Danny J.Rasch | Data &amp; AI Consultant</title>
+    <title>Danny J. Rasch | Data &amp; AI Consultant</title>
     <link>/</link>
-    <description>Recent content on Danny J.Rasch | Data &amp; AI Consultant</description>
+    <description>Recent content on Danny J. Rasch | Data &amp; AI Consultant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2020 [DJR](https://dannyrasch.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 09 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <copyright>Copyright &amp;copy; 2021 [Danny J. Rasch ](https://raschadvisory.com) All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 07 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TEST</title>
+      <link>/english/2021-07-07-test/</link>
+      <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/english/2021-07-07-test/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grafana - Azure Monitoring</title>
+      <link>/blog/07_grafana_part1_blog/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/07_grafana_part1_blog/</guid>
+      <description>&lt;p&gt;DSVM Part 1 &amp;hellip;&lt;/p&gt;</description>
+    </item>
     
+    <item>
+      <title>ELT with Databricks &amp; Spark</title>
+      <link>/blog/databricks_spark/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/databricks_spark/</guid>
+      <description>&lt;p&gt;ELT with Databricks and spark &amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Key Vault</title>
@@ -28,7 +51,7 @@
       
       <guid>/blog/blog-post-6/</guid>
       <description>DSVM Part 1 thftz tz fz
- The Windows Data Science Virtual Machine (DSVM) is a powerful data science development environment that enables you to perform various data exploration and modeling tasks.</description>
+Continue Reading The Windows Data Science Virtual Machine (DSVM) is a powerful data science development environment that enables you to perform various data exploration and modeling tasks.</description>
     </item>
     
     <item>
@@ -43,7 +66,7 @@
     <item>
       <title>Zeppelin Notebook</title>
       <link>/blog/zeppelinnotebook/</link>
-      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/zeppelinnotebook/</guid>
       <description>&lt;p&gt;The Notebook is the place for all your needs, i.e.Data Ingestion, Data Discovery, Data Analytics, Data Visualization &amp;amp; Collaboration&lt;/p&gt;</description>
@@ -177,51 +200,6 @@ Portainer is an open-source management UI for Docker, including Docker Swarm env
       
       <guid>/blog/09_reticulate/</guid>
       <description>&lt;p&gt;The reticulate package provides a comprehensive set of tools for interoperability between Python and R.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How To Wear Bright Shoes</title>
-      <link>/blog/blog-post-1/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>/blog/blog-post-1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
-    </item>
-    
-    <item>
-      <title>How To Wear Bright Shoes</title>
-      <link>/blog/blog-post-2/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>/blog/blog-post-2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
-    </item>
-    
-    <item>
-      <title>How To Wear Bright Shoes</title>
-      <link>/blog/blog-post-3/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>/blog/blog-post-3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
-    </item>
-    
-    <item>
-      <title>How To Wear Bright Shoes</title>
-      <link>/blog/blog-post-4/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>/blog/blog-post-4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
-    </item>
-    
-    <item>
-      <title>How To Wear Bright Shoes</title>
-      <link>/blog/blog-post-5/</link>
-      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
-      
-      <guid>/blog/blog-post-5/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae placeat ad architecto nostrum asperiores vel aperiam, veniam eum nulla. Maxime cum magnam, adipisci architecto quibusdam cumque veniam fugiat quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
     </item>
     
     <item>

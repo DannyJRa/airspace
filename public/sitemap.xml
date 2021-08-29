@@ -1,391 +1,202 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>/tags/azure/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/cloud/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/english/</loc>
+    <lastmod>2021-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/english/2021-07-07-test/</loc>
+    <lastmod>2021-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/azure/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/07_grafana_part1_blog/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/bigdata/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/databricks_spark/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/engineering/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/105_vault_blog/</loc>
     <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/blog-post-6/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/96_ml_workspace_blog/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/faq/</loc>
     <lastmod>2019-12-23T13:05:29+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ops/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-08-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/zeppelinnotebook/</loc>
-    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2019-08-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/engineering/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/portainer2/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/python/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/flask/</loc>
     <lastmod>2019-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/flaskconnexion/</loc>
     <lastmod>2019-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/api/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/pythonlibrariesforgraphql/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/installing-nginx-server/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/linux/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/r/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/rstudio/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/shiny/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/vscodeasaserver/</loc>
     <lastmod>2019-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/gcp/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/gcp_cloudscheduler/</loc>
     <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/hugowebsitewithr/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/webdev/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/54_firebaseauthshiny2/</loc>
     <lastmod>2019-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/django/</loc>
     <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/django_deployment/</loc>
     <lastmod>2019-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/19_pipenv3/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/docker/</loc>
     <lastmod>2019-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/15_dockerpostgresql/</loc>
     <lastmod>2019-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ml/</loc>
     <lastmod>2019-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/ml_caret/</loc>
     <lastmod>2019-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/network_analysis/</loc>
     <lastmod>2019-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/viz/</loc>
     <lastmod>2019-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/r-package/</loc>
     <lastmod>2018-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/09_reticulate/</loc>
     <lastmod>2018-11-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/advice/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ai/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/android/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/artificial-intelligence/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/company-news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/blog-post-2/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/blog-post-3/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/blog-post-4/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/blog-post-5/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/legacy-support/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/mechine/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/retro/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/technology/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/github_rest_api3/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/set-up/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/dsvwpart1/</loc>
     <lastmod>2018-06-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bigdata/</loc>
-    <lastmod>2018-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/bigdata_with_spark/</loc>
     <lastmod>2018-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/mathartwithr/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/django_basics/</loc>
     <lastmod>2018-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/68_1_python_libraries_for_graphql_blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/69_python_r_blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/ai-platform_blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/portainer_blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/john-doe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/map/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/author/mark-dinn/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/pricing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-3/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-4/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-5/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/rio-furniture-6/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/service/</loc>
   </url>
-  
 </urlset>

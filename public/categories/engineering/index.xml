@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on Danny J. Rasch | Data &amp; AI Consultant</title>
+    <link>/categories/engineering/</link>
+    <description>Recent content in Engineering on Danny J. Rasch | Data &amp; AI Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2021 [Danny J. Rasch ](https://raschadvisory.com) All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ELT with Databricks &amp; Spark</title>
+      <link>/blog/databricks_spark/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/databricks_spark/</guid>
+      <description>&lt;p&gt;ELT with Databricks and spark &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
