@@ -20,7 +20,8 @@ link = "plugins/smartslider3/js/n2.min.js"
 link = "plugins/smartslider3/js/smartslider-frontend.min.js"
 [[params.plugins.js]]
 link = "plugins/smartslider3/js/ss-block.min.js"
-
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-simple.min.js"
 
 
 ## Smartslider3
