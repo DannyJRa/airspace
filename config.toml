@@ -11,7 +11,8 @@
 white = "#ffffff"
 black = "#000000"
 light = "#FAFAFA"
-primary_color = "#FE6019"
+primary_color = "#1371d6"
+#"#FE6019"
 
 # font variable
 h1 = "48px"
@@ -57,3 +58,23 @@ link = "plugins/swiper/swiper-bundle.min.js"
 link = "plugins/rellax/rellax.min.js"
 [[params.plugins.js]]
 link = "plugins/webfont-loader/webfont-loader-2.min.js"
+
+## Smartslider3
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/n2.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/smartslider-frontend.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-block.min.js"
+[[params.plugins.js]]
+link = "plugins/smartslider3/js/ss-simple.min.js"
+
+
+
+[[params.plugins.css]]
+link = "plugins/smartslider3/css/normalize.min.css"
+[[params.plugins.css]]
+link = "plugins/smartslider3/css/smartslider.min.css"
+[[params.plugins.css]]
+link = "plugins/smartslider3/css/fontawesome.min.css"
+# JS Plugins
