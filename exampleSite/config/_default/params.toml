@@ -66,7 +66,7 @@ button = "I Accept"
 [cta]
 enable = true
 title = "Get In Contact Now"
-content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin."
+content = ""
 button = "CONTACT"
 button_link = "contact/"
 
