@@ -13,12 +13,10 @@ author = "DannyJRa"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # footer information
-#TODO: footer
 footer_info = "Subject matter expertise in designing and implementing solutions to create business value by connecting the data dots."
 
 # contact form action
-#TODO: form spree
-contact_form_action = "https://formspree.io/f/xgernlzd" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/f/xrgjblqo" # contact form works with https://formspree.io
 
 # copyright
 copyright = "Designed By [DannyJRa](https://raschadvisory.com/) & Developed in Switzerland"
@@ -71,7 +69,7 @@ button = "CONTACT"
 button_link = "contact/"
 
 ############################# social site ########################
-#TODO: socials
+
 [[social]]
 title = "LinkedIn"
 icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
