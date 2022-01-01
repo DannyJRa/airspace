@@ -51,7 +51,7 @@ preloader = "images/favicon.png" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Login"
-link = "https://gethugothemes.com/products/andromeda/"
+link = "www.google.com"
 
 # cookies
 [cookies]
