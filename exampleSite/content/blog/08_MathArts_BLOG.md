@@ -78,4 +78,4 @@ ggsave("harmonograph01.png", p, width = 20, height = 20, units = "cm")
 
 ### Example 2
 
-![Art 2](images/blog/lissajous001.png)
+![Art 2](/images/blog/lissajous001.png)
