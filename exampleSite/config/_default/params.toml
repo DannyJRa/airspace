@@ -73,21 +73,16 @@ button_link = "contact/"
 ############################# social site ########################
 #TODO: socials
 [[social]]
-title = "Andromeda"
-icon = "lab la-facebook-f" # https://icons8.com/line-awesome
-link = "#!"
-
-[[social]]
-title = "AndromedaTweet"
-icon = "lab la-twitter" # https://icons8.com/line-awesome
-link = "#!"
-
-[[social]]
 title = "LinkedIn"
 icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
 link = "https://www.linkedin.com/in/dannyrasch/"
 
 [[social]]
-title = "AndromedaPin"
-icon = "lab la-pinterest" # https://icons8.com/line-awesome
-link = "#!"
+title = "Insider_DJR"
+icon = "lab la-twitter" # https://icons8.com/line-awesome
+link = "https://twitter.com/Insider_DJR"
+
+[[social]]
+title = "DannyJRa"
+icon = "la la-github" # https://icons8.com/line-awesome
+link = "https://github.com/DannyJRa"
