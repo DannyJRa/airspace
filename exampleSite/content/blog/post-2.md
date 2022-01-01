@@ -1,7 +1,7 @@
 ---
 date: "2021-07-13"
 title: "Why you should launch your product in phases not after done"
-image: "images/blog/02.jpg"
+image: "images/blog/08_cover_BLOG.png"
 author_info: 
   name: "Derick Barker"
   image: "images/author/derick.jpg"

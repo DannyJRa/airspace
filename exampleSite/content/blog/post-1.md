@@ -1,7 +1,7 @@
 ---
 date: '2021-12-26T13:47:53.006Z'
 title: The Real3 Product From the Buyers improvements in Overflow basis. vdfdgdfg gfdg
-image: images/blog/01.jpg
+image: "images/blog/08_cover_BLOG.png"
 author_info:
   name: Abdullah Al Shifat
   image: images/author/abdullah.jpg
