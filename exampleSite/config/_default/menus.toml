@@ -1,0 +1,55 @@
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 3
+
+ 
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+
+# footer menu
+
+[[footer]]
+name = "Home"
+url = ""
+weight = 1
+
+[[footer]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Blog"
+url = "blog/"
+weight = 2
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 3
+
+
+#[[footer]]
+#name = "Blog Details"
+#url = "blog/post-1/"
+#weight = 3
+
+#[[footer]]
+#name = "Terms & Conditions"
+#url = "terms-and-conditions/"
+#weight = 4

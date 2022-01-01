@@ -1,0 +1,86 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/logo.svg"
+# use `x` with logo_width, example: "100x"
+logo_width = "240x"
+# logo text will only show when logo is missing.
+logo_text = "Andromeda"
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "DannyJRa"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+# footer information
+footer_info = "Subject matter expertise in designing and implementing solutions to create business value by connecting the data dots."
+
+# contact form action
+contact_form_action = "https://formspree.io/f/xrgjblqo" # contact form works with https://formspree.io
+
+# copyright
+copyright = "Designed By [DannyJRa](https://raschadvisory.com/) & Developed in Switzerland"
+
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script= "" 
+
+# buy premium popup
+buy_premium_popup = false
+
+# Main Sections
+mainSections= ["blog"]
+
+# contact information
+[contact_info]
+address = "Viaduktstrasse 93, 8005 Zurich"
+phone = ["danny@raschadvisory.com"]   #, "+205-857-2321", "+002-569-6969"]
+email = [""]   #, "smith@anderson.io", "john@anderson.io"]
+
+# imaging processing
+[imaging]
+# Default JPEG or WebP quality setting. Default is 100.
+quality = 100
+
+# Preloader
+[preloader]
+enable = true
+preloader = "images/favicon.png" # use jpg, png, svg or gif format.
+
+
+# TODO: Navigation button
+[navigation_button]
+enable = true
+label = "Login"
+link = "www.google.com"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+# call-to-action
+[cta]
+enable = true
+title = "Get In Contact Now"
+content = ""
+button = "CONTACT"
+button_link = "contact/"
+
+############################# social site ########################
+
+[[social]]
+title = "LinkedIn"
+icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
+link = "https://www.linkedin.com/in/dannyrasch/"
+
+[[social]]
+title = "Insider_DJR"
+icon = "lab la-twitter" # https://icons8.com/line-awesome
+link = "https://twitter.com/Insider_DJR"
+
+[[social]]
+title = "DannyJRa"
+icon = "la la-github" # https://icons8.com/line-awesome
+link = "https://github.com/DannyJRa"
