@@ -11,7 +11,7 @@ weight = 2
 
 [[main]]
 name = "Blog"
-url = "blog/"
+url = "https://blog.raschadvisory.com"
 weight = 3
 
  
